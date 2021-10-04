@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90.57deg, #1e034a 1.73%, #2c075a 101.09%);
+  font-family: "Work Sans", sans-serif;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.tfSvg img {
+  width: 6.25rem;
+}
+
+.nav-menu {
+  display: flex;
+}
+
+.nav-menu ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-menu ul > li {
+  position: relative;
+  margin: 0 1.5rem;
+  padding: 5px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: larger;
+}
+
+.menu-title{
+    display: none;
+}
+
+/* 
+===================================
+Style link based on selected link
+===================================
+*/
+.selected{
+    border-bottom: 2px solid #e5e5e5;
+    padding-bottom: 3px;
+    font-weight: bolder;
+    border-bottom-left-radius: 2px ;
+    border-bottom-right-radius: 2px ;
+}
+
+/* 
+================
+Responsiveness
+================
+*/
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    width: 100%;
+  }
+  .nav-menu ul > li {
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  a {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+  .nav-menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #310a5d;
+    box-shadow: 6.02206px 6.02206px 12.546px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    height: 50vh;
+    width: 70vw;
+    transition: all 0.5s ease;
+  }
+  .hide {
+    transform: translate(100%);
+  }
+  .menu-title{
+      display: block;
+  }
+  .nav-menu ul {
+    flex-direction: column;
+    margin-top: 1.4rem;
+    margin-left: .625rem;
+  }
+
+  .nav-menu > ul > li{
+      font-size: 1.4rem;
+      font-weight: 600;
+  }
+
+  .nav-menu > ul > li {
+      margin: 0.9rem;
+  }
+
+  /* hamburger menu */
+  .hamburger-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border-radius: 3px;
+    z-index: 1000;
+  }
+  .hamburger {
+    width: 30px;
+    height: 1.6px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+  }
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 1.6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
+  .hamburger::before {
+    transform: translateY(-12px);
+  }
+  .hamburger::after {
+    transform: translateY(12px);
+  }
+  .open .hamburger {
+    transform: translateX(-8px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .open .hamburger::before {
+    transform: rotate(45deg) translate(5px, -5px);
+  }
+  .open .hamburger::after {
+    transform: rotate(-45deg) translate(5px, 5px);
+  }
+}
