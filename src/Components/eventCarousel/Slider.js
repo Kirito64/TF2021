@@ -2,25 +2,35 @@ import React from 'react';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import "./Crousel.css"
+import "./Slider.css"
 
-function Slider {
-    render() {
+function Slider() {
+    
         return (
-            <Carousel>
-                <div>
-                    <img src="assets/1.jpeg" />
-                    <p className="legend">Legend 1</p>
+            <>
+            <div className="container">
+            <Carousel >
+                <div >
+                    <img classname="abs"  style={{height:"437px",width:"530px"}} src="" />
+                    
+                </div>
+                <div >
+                    <img classname="abs" src=""  />
+                   
                 </div>
                 <div>
-                    <img src="assets/2.jpeg" />
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    <img src="assets/3.jpeg" />
-                    <p className="legend">Legend 3</p>
+                    <img classname="abs" src="assets/3.jpeg" />
+                   
                 </div>
             </Carousel>
+            <div className="about">
+            <h1 className="head">About Tantra Fiesta</h1>
+            <p className="para">Tantra Fiesta is the Annual Technical Fest of Indian Institute of Nagpur. With Tantra comes learning, exploration blah blah. If you are a student looking for blah this is the right place for you. Tantra Fiesta is the Annual Technical Fest of Indian Institute of Nagpur. With Tantra comes learning, exploration blah blah. If you are a student looking for blah this is the right place for you. Tantra Fiesta is the Annual Technical Fest of Indian Institute of Nagpur. With Tantra comes learning, exploration blah blah. If you are a student looking for blah this is the right place for you. Tantra Fiesta is the Annual Technical Fest of Indian Institute of Nagpur. With Tantra comes learning, exploration blah blah. If you are a student looking for blah this is the right place for you. </p>
+            </div>
+            </div>
+            </>
         );
-    }
-});
+    
+
+}
+export default Slider;
