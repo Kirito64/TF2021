@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700;800&display=swap');
+
+.root-landing{
+    background-image: url(./background-landing.svg);
+    color: white;
+    padding-top: 5rem;
+    font-family: 'work sans';
+    padding-bottom: 2rem;
+}
+.top-landing h1{
+    font-weight: 700;
+    font-size: 3.3rem;
+    text-shadow: 1px 1px 15px #000;
+    font-family: 'work sans';
+    text-align: center;
+    padding-top: 0rem;
+    letter-spacing: 0.15rem;
+}
+.top-landing button{
+    background: linear-gradient(86.95deg, #7F5CFF -38.28%, #45108A 155.03%);
+    border: none;
+    padding: 0.7rem;
+    font-weight: 400;
+    border-radius: .25rem;
+    letter-spacing: 0.01rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: 0.02px 0.2px 40px rgb(34, 34, 34);
+}
+.top-landing{
+    text-align: center;
+}
+.bottom-landing{
+    text-align: center;
+    margin-top: 7rem;
+}
+.bottom-landing p{
+    font-weight: lighter;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+.bottom-landing h4{
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px){
+    .root-landing{
+        background-size: cover;
+    }
+    .top-landing h1{
+        font-size: 2rem;
+        letter-spacing: 0px;
+    }
+    .bottom-landing h4{
+        font-size: 1rem;
+    }
+    .bottom-landing p{
+        font-size: 0.8rem;
+    }
+}
