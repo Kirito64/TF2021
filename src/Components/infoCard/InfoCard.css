@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+.comp_hack{
+   background-color: rgba(0, 0, 0, 0.2);
+   width: 29.06rem;
+   height: 17.12rem;
+   display: flex;
+   flex-direction: column;
+}
+.register_hack{
+   display: flex;
+}
+#subhead{
+font-family: 'Work Sans', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 2.25rem;
+line-height: 2.625rem;
+letter-spacing: -0.02em;
+height: 2.625rem;
+width: 3.25rem;
+color: #E5E5E5;
+margin-left: 1.7rem;
+
+}
+#cont{
+font-family: 'Work Sans', sans-serif;
+max-width: 27ch;
+font-style: normal;
+font-weight: normal;
+font-size: 1.125rem;
+line-height: 1.68rem;
+letter-spacing: -0.02em;
+width: 20.06rem;
+height: 3.375rem;
+color: #FFFFFF;
+margin-top: -1rem;
+margin-left: 1.7rem;
+}
+#registern{
+margin-top: 0.8rem;
+margin-left: 1.7rem;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0.5rem 1rem;
+width: 9.125rem;
+height: 2.31rem;
+background: #7F5CFF;
+border-radius: 0.25rem;
+border: #7F5CFF;
+text-align: center;
+letter-spacing: -0.02em;
+color: #FFFFFF;
+font-style: normal;
+font-weight: 600;
+font-size: 1.125rem;
+line-height: 1.312rem;
+font-family: 'Work Sans', sans-serif;
+cursor: pointer;
+}
+a{
+   text-decoration: none;
+}
+#atten{
+width: 11.5rem;
+height: 3.375rem;
+font-family: 'Work Sans', sans-serif;;
+font-style: normal;
+font-weight: 600;
+font-size: 1.125rem;
+line-height: 1.687rem;
+letter-spacing: -0.02em;
+color: rgba(229, 229, 229, 0.54);
+margin-left: 2.4rem;
+margin-top: 0.2rem;
+
+}
