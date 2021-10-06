@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css'
+import './Footer.css'
 
 const Footer = () => {
     return (<>
@@ -9,74 +9,45 @@ const Footer = () => {
      
     <div  className="container    ">
       <div  className="d-flex  flex-row justify-content-between mt-2 ">
-      <div>
-      <h4 className=" query     ">
+      <div className="sec1">
+      <h4 className=" queryy     ">
               For Queries Contact
             </h4>
-            <h6>
+            <div className="Adjust" >
+            <h6 className="event">
               Event Co-ordinators &#129125;
             </h6>
-            <h6>tantrahelp@iiitn.ac.in</h6>
+            <h6 className="event">tantrahelp@iiitn.ac.in</h6>
+            </div>
+      </div>
+      <div className="social">
+        <h1 className="follow">Follow us On</h1>
+        <div className="logos">
+        <a href="./"><img className="logo" src="https://seeklogo.com/images/T/twitter-logo-1DEF94C339-seeklogo.com.png" alt="" /></a>
+        <a href="./"><img className="logo" src="https://seeklogo.com/images/F/facebook-logo-264A8EFBA1-seeklogo.com.png" alt="" /></a>
+        <a href="./"><img className="logo" src="https://seeklogo.com/images/I/instagram-new-2016-glyph-logo-84CB825424-seeklogo.com.png" alt="" /></a>
+      
+        </div>
+        <div className="us">  <p >Contact with us here</p></div>
+       
       </div>
       <div>
-          <h4 className="query ">
-              Our Sponsers
-          </h4>
+          
           <div className="d-flex flex-row">
-          <div className="box1"></div>
-          <div className="box1"></div>
-          <div className="box1"></div>
-          <div className="box1"></div>
-          <div className="box1"></div>
-          <div className="box1"></div>
+         
           </div>
       </div>
        </div>
-        <div  className="d-flex flex-row justify-content-between  mt-1">
-          <div className="d-flex  flex-column">
-          <h4  className=" query       ">Follow us</h4>
-          <div className="d-flex  ">
-          <a type="button" className="btn btn-primary btn-floating m-1" href="#!" role="button"  ><i  className="fab fa-facebook-f"></i></a>
-
-         
-            <a className="btn btn-primary btn-floating m-1" href="#!" role="button "> <i  className="fab fa-twitter"></i></a>
-
-           
-             
-
-           
-            <a
-                className="btn btn-primary btn-floating m-1"
-               style={{backgroundcolor:" #ac2bac"}}
-               href="#!"
-               role="button"
-               ><i  className="fab fa-instagram"></i></a>
-
-            
-           
-              
-          </div>
-          <h6>
-                   Connect with us here
-               </h6>
-
-              
-
-          </div>
+       
           <div>
           <h4 className="query  mt-3 ">
-              Our  Co-Sponsers
+        
           </h4>
           <div className="d-flex flex-row">
-          <div className="box1"></div>
-          <div className="box1"></div>
-          <div className="box1"></div>
-          <div className="box1"></div>
-          <div className="box1"></div>
-          <div className="box1"></div>
+          
           </div>
       </div>
-          </div>
+          
          
           
 

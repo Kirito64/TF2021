@@ -1,0 +1,120 @@
+ .footer{
+  background: #300957;
+  width: 1900px;
+height: 614px;
+top: 3864px;
+position: absolute;
+ 
+
+   
+  }
+  
+  h6{
+    color: darkgray;
+    font-size: .7rem;
+  }
+  .btn{
+    height: 1.3rem;
+    width: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box1{
+    height: 1rem;
+    width: 1rem;
+    background-color: white;
+   
+    margin: .4rem;
+  
+    
+  }
+  .sec1{
+    height: 42px;
+  }
+.event{
+  display: flex;
+  flex-direction: column;
+ 
+width: 267px;
+height: 28px;
+
+
+font-family: Work Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+letter-spacing: -0.02em;
+
+color: rgba(229, 229, 229, 0.54);
+
+}
+  .queryy{
+  width: 341px;
+height: 42px;
+left: 169px;
+top: 75px;
+
+font-family: Work Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+position: absolute;
+  }
+.Adjust{
+  margin: 90px 0px 0px -130px;
+}
+
+.follow{
+  position: absolute;
+width: 256px;
+height: 42px;
+left: 169px;
+top: 340px;
+
+font-family: Work Sans;
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 42px;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+}
+
+.logo{
+  
+  height: 78px;
+  width: 80px;
+  padding: 12px;
+  
+ 
+}
+.logos{
+  display: flex;
+  margin: 400px 0px 0px -865px;
+  
+
+}
+
+.us{
+  width: 254px;
+height: 28px;
+
+
+font-family: Work Sans;
+font-style: normal;
+font-weight: 530;
+font-size: 24px;
+line-height: 28px;
+
+
+color: rgba(255, 255, 255, 0.54);
+margin: 30px 0px 0px -855px;
+
+}
