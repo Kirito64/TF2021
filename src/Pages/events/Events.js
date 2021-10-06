@@ -3,6 +3,9 @@ import "./Events.css"
 
 import Timeline from '../../Components/timeline/Timeline'
 
+
+
+
 const Events = () => {
     return (
       <div className="events-container">
