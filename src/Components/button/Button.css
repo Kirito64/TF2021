@@ -29,8 +29,8 @@
 }
 
 .btn-hero-size{
-    width: 12.9rem;
-    height: 4.45rem;
+    width: 11.9rem;
+    height: 3.45rem;
     padding: 1.5rem;
     font-size: 1.25rem;
 }
@@ -50,9 +50,7 @@
 }
 
 .btn-register-now-size{
-     width: 7.86rem;
-    height: 2.2rem;
-    padding: .5rem 1rem;
+    padding: .75rem 1.2rem;
     font-size: 1rem;
 } 
 
