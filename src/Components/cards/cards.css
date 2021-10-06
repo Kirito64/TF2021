@@ -2,94 +2,91 @@
 
 .gallery {
   position: relative;
-  width: 368px;
-  height: 460px;
-  left: 0px;
-  top: 0px;
+  width: 23rem;
+  height: 28.75rem;
   font-family: Work Sans;
-  margin: 0px 40px;
+  margin: 0rem 1.5rem;
   background: rgba(0, 0, 0, 0.27);
 }
 
-div.gallery img{
-  width: 368px;
-  height: 257px;
-  left: 19px;
-  top: 31px;
+div.gallery img {
+  width: 23rem;
+  height: 16.063rem;
 }
 
 .desc {
   position: relative;
-  left: 31px;
+  left: 1.938rem;
 }
 
 .one {
   position: relative;
-  width: 184px;
-  height: 42px;
-  top: 16px;
+  width: 23rem;
+  height: 2.625rem;
+  top: 1rem;
   font-family: Work Sans;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
+  font-size: 2rem;
+  line-height: 2.625rem;
+  text-align: left;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
-.same{
+.same {
   display: flex;
 }
 
-.button{
+.button {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 16px;
+  padding: 1rem;
   position: relative;
-  width: 126px;
-  height: 60px;
-  top: 32px;
-  background: #7F5CFF;
-  border-color:#7F5CFF;
-  border-radius: 4px;
+  width: 7.875rem;
+  height: 3.75rem;
+  top: 2rem;
+  background: #7f5cff;
+  border-color: #7f5cff;
+  border-radius: 0.25rem;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 .two {
   position: relative;
-  width: 144px;
-  height: 42px;
-  left: 27px;
-  top: 42px;
+  width: 9rem;
+  height: 2.625rem;
+  left: 1.688rem;
+  top: 2.625rem;
   font-family: Work Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 150%;
   letter-spacing: -0.02em;
   color: rgba(229, 229, 229, 0.54);
 }
 
-
 .three {
   position: relative;
-  width: 176px;
-  height: 21px;
-  top: 44px;
+  width: 11rem;
+  height: 1.313rem;
+  top: 3.75rem;
   font-family: Work Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.125rem;
+  line-height: 1.313rem;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #7F5CFF;
+  color: #7f5cff;
+  text-decoration: none;
 }

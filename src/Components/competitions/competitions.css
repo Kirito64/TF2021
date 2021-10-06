@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 .competition-container {
@@ -11,67 +12,58 @@
   font-family: "Work Sans", sans-serif;
 }
 
-.header{
+.header {
   display: flex;
 }
 
-h1{
+h1 {
   position: relative;
-  width: 307px;
-  height: 56px;
-  left: 478.5px;
-  top: 0px;
+  width: 19.188rem;
+  height: 3.5rem;
+  left: 29.906rem;
   font-family: Work Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 48px;
-  line-height: 56px;
+  font-size: 3rem;
+  line-height: 3.5rem;
   text-align: center;
   letter-spacing: -0.02em;
-  color: #FFFFFF;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 32px 0px;
+  color: #ffffff;
+  margin: 2rem 0rem;
 }
 
-.view{
+.view {
   position: relative;
-  width: 128px;
-  height: 56px;
-  left: 835px;
-  top: 0px;
-  line-height: 56px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 32px 0px;
+  width: 8rem;
+  height: 3.5rem;
+  left: 52.188rem;
+  line-height: 3.5rem;
+  margin: 2rem 0rem;
 }
 
-.view span{
-  width: 92px;
-  height: 28px;
-  left: 10px;
-  top: 10px;
+.view span {
+  width: 5.75rem;
+  height: 1.75rem;
+  left: 0.625rem;
+  top: 0.625;
   font-family: Work Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   letter-spacing: -0.02em;
-  color: #E5E5E5;
+  color: #e5e5e5;
 }
 
-.view img{
+.view img {
   position: relative;
-  color: #E5E5E5;
-  left: 10px;
+  color: #e5e5e5;
+  left: 0.625rem;
 }
 
-.card{
+.card {
   display: flex;
-  
-  height: 460px;
+  height: 28.75rem;
   flex: none;
-  margin: 0px 48px;
+  margin: 0rem 1rem;
 }
