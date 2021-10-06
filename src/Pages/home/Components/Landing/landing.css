@@ -4,9 +4,10 @@
 .root-landing{
     background-image: url(./background-landing.svg);
     color: white;
-    padding-top: 5rem;
+    padding-top: 10rem;
     font-family: 'work sans';
     padding-bottom: 2rem;
+    height: 90vh;
 }
 .top-landing h1{
     font-weight: 700;
@@ -28,7 +29,7 @@
 }
 .bottom-landing{
     text-align: center;
-    margin-top: 7rem;
+    margin-top: 8rem;
 }
 .bottom-landing p{
     font-weight: lighter;
