@@ -18,17 +18,10 @@
     letter-spacing: 0.15rem;
 }
 .top-landing button{
-    background: linear-gradient(86.95deg, #7F5CFF -38.28%, #45108A 155.03%);
-    border: none;
-    padding: 0.7rem;
-    font-weight: 400;
-    border-radius: .25rem;
-    letter-spacing: 0.01rem;
-    cursor: pointer;
     margin-top: 1.5rem;
-    color: #fff;
-    font-size: 1rem;
-    box-shadow: 0.02px 0.2px 40px rgb(34, 34, 34);
+}
+.btn{
+    margin-top: 1.5rem;
 }
 .top-landing{
     text-align: center;
