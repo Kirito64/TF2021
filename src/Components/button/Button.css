@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+:root {
+  --col-hero-btn-bg: linear-gradient(86.95deg,#7f5cff -38.28%,#45108a 155.03%);
+  --col-normal-btn-bg: #7F5CFF;
+  --border-radius-hero-btn: 8px;
+  --border-radius-normal-btn: 4px;
+  --col-btn-text: #ffffff;
+  --font-family: "Work Sans", sans-serif;
+}
+
+.btn-hero {
+  background: var(--col-hero-btn-bg);
+  color: var(--col-btn-text);
+  cursor: pointer;
+  box-shadow: 6px 6px 18px rgba(39, 3, 62, 0.78);
+  font-family: var(--font-family);
+  letter-spacing: 1px;
+  border-radius: var(--border-radius-hero-btn);
+  border: none;
+}
+
+.btn-normal{
+    background: var(--col-normal-btn-bg);
+    color: var(--col-btn-text);
+    cursor: pointer;
+    border-radius: var(--border-radius-normal-btn);
+    border: none;
+}
+
+.btn-hero-size{
+    width: 11.9rem;
+    height: 3.45rem;
+    padding: 1.5rem;
+    font-size: 1.25rem;
+}
+
+.btn-register-size{
+    width: 5.955rem;
+    height: 3.35rem;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.btn-join-now-size{
+     width: 6.01rem;
+    height: 2.2rem;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+}
+
+.btn-register-now-size{
+    padding: .75rem 1.2rem;
+    font-size: 1rem;
+} 
+
+
+/* 
+================
+Responsiveness
+================
+*/
+@media screen and (max-width:600px) {
+    .btn-hero-size{
+        width: 12rem;
+        height: 3.0625rem;
+        padding: 0.8rem;
+    }
+    .btn-register-size{
+        width: 4.955rem;
+        height: 2.35rem;
+        padding: 0.5rem;
+    }
+    .btn-register-now-size{
+        width: 6.99375rem;
+        height: 1.825rem;
+        padding: .3125rem .5625rem;
+    }
+    .btn-join-now-size{
+        width: 5.135rem;
+        height: 1.825rem;
+        padding: .3125rem .5625rem;
+    }
+}

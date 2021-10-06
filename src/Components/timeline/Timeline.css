@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.timeline-container {
+  font-family: "Work Sans", sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading h1 {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 3rem ;
+  width: 95%;
+  position: relative;
+  height: 150px;
+  padding: 0;
+}
+
+.time-event {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translate(0, 30px);
+  height: 150px;
+  width: 200px;
+  text-align: center;
+}
+
+.time p{
+  color: rgba(255, 255, 255, 0.54);
+}
+
+.event {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 1.6rem;
+  font-size: 0.8rem;
+  height: 90%;
+  padding-top: 3.2rem;
+}
+
+.event h3 p{
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+}
+
+.circle-container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 88%;
+  display: flex;
+  justify-content: space-between;
+  background: #7F5CFF;
+  height: 4px;
+  border-radius: 5px;
+}
+
+.circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.outer-circle{
+    width: 14px;
+    height: 14px;
+}
+
+.inner-circle{
+    position: absolute;
+    width: 9px;
+    height: 9px;
+}

@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+.comp_hack{
+   background-color: rgba(0, 0, 0, 0.2);
+   display: flex;
+   flex-direction: column;
+   padding: 2rem;
+   width: 28rem;
+}
+.register_hack{
+   display: flex;
+}
+#subhead{
+font-family: 'Work Sans', sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 2.3rem;
+letter-spacing: 0.02em;
+width: 3.25rem;
+color: #E5E5E5;
+margin-left: 1.7rem;
+}
+#cont{
+font-family: 'Work Sans', sans-serif;
+max-width: 28ch;
+font-style: normal;
+font-weight: normal;
+font-size: 1.1rem;
+letter-spacing: -0.02em;
+height: 3.375rem;
+color: #FFFFFF;
+margin-top: 1rem;
+margin-left: 1.7rem;
+margin-bottom: 2.8rem;
+}
+a{
+   text-decoration: none;
+}
+#atten{
+width: 11.5rem;
+height: 3.375rem;
+font-family: 'Work Sans', sans-serif;;
+font-style: normal;
+font-weight: 600;
+font-size: 1.125rem;
+line-height: 1.687rem;
+letter-spacing: -0.02em;
+color: rgba(229, 229, 229, 0.54);
+margin-left: 2.4rem;
+margin-top: 0.2rem;
+}
+.register_hack a{
+    margin-left: 1.7rem;
+}
