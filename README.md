@@ -32,8 +32,8 @@ This is a github repository for the official website of Tantra Fiesta - The Annu
 
 ## Getting Started
 
-- [`Contributing`](https://github.com/Kirito64/TF2021/blob/main/CONTRIBUTING.md)
-- [`License`](https://github.com/Kirito64/TF2021/blob/main/LICENSE)
+- [`Contributing`](https://github.com/Kirito64/TF2021/blob/master/CONTRIBUTING.md)
+- [`License`](https://github.com/Kirito64/TF2021/blob/master/LICENSE)
 
 ### Built With - 
 - React Js
