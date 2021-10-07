@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/Kirito64/TF2021">
+    <img src="https://raw.githubusercontent.com/bhavesh-chaudhari/Learning-Material/main/tf-github-circle.png?token=AR4AVBB6PEOYL73TMNCX33LBM7K64" alt="Logo" width="100" height="100">
+  </a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <h3 align="center">Tantra Fiesta</h3>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  <p align="center">
+    The Technical Fest Of IIITN
+    <br />
+    <a href="https://github.com/Kirito64/TF2021"><strong>Visit Website »</strong></a>
+  </p>
+</div>
 
-### `npm test`
+<hr>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## About Project
 
-### `npm run build`
+This is a github repository for the official website of Tantra Fiesta - The Annual Technical Fest held by [IIITN](https://twitter.com/iiitn_official?lang=en).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [`Contributing`](https://github.com/Kirito64/TF2021/blob/main/CONTRIBUTING.md)
+- [`License`](https://github.com/Kirito64/TF2021/blob/main/LICENSE)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built With - 
+- React Js
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/Kirito64/TF2021.svg?style=for-the-badge
+[contributors-url]: https://github.com/Kirito64/TF2021/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Kirito64/TF2021.svg?style=for-the-badge
+[forks-url]: https://github.com/Kirito64/TF2021/network/members
+[stars-shield]: https://img.shields.io/github/stars/Kirito64/TF2021.svg?style=for-the-badge
+[stars-url]: https://github.com/Kirito64/TF2021/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Kirito64/TF2021.svg?style=for-the-badge
+[issues-url]: https://github.com/Kirito64/TF2021/issues
+[license-shield]: https://img.shields.io/github/license/Kirito64/TF2021.svg?style=for-the-badge
+[license-url]: https://github.com/Kirito64/TF2021/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/school/indian-institute-of-information-technology-nagpur/
+[product-screenshot]: images/screenshot.png
