@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Navbar from "./Components/navbar/Navbar";
-
+import "tailwindcss/tailwind.css"
 // importing pages
 import Home from "./Pages/home/Home";
 import About from "./Pages/about/About";
