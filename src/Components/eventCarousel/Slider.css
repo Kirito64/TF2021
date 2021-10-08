@@ -1,22 +1,26 @@
-body{
-  background: linear-gradient(307.47deg, #45108A 9.23%, #3D065F 66.85%, #200554 112.51%);
+body {
+  background: linear-gradient(
+    307.47deg,
+    #45108a 9.23%,
+    #3d065f 66.85%,
+    #200554 112.51%
+  );
   height: 100vh;
 }
-.container{
+.container {
   position: static;
   width: 1242px;
   height: 437px;
-margin: 200px 100px 100px 350px;
-background: #3A065E;
+  margin: 200px 100px 100px 350px;
+  background: #3a065e;
 
-border-radius: 8px;
-display: flex;
-border: 0.1px solid #3A065E;
-
+  border-radius: 8px;
+  display: flex;
+  border: 0.1px solid #3a065e;
 }
 
 .carousel .thumb {
-  transition: border .15s ease-in;
+  transition: border 0.15s ease-in;
   display: none;
   margin-right: 6px;
   white-space: nowrap;
@@ -24,50 +28,50 @@ border: 0.1px solid #3A065E;
   border: 3px solid #fff;
   padding: 2px;
 }
-.abs{
-   height: 200px;
-   width: 250px;
+.abs {
+  height: 200px;
+  width: 250px;
 }
-.about{
+.about {
   width: auto;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 16px 0px 0px 40px;
   font-family: Work Sans;
 }
-.head{
-  
+.head {
   width: 324px;
-height: 42px;
-left: 581px;
-top: 49px;
-font-weight: 500;
-font-size: 36px;
-line-height: 42px;
-letter-spacing: -0.02em;
+  height: 42px;
+  left: 581px;
+  top: 49px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: -0.02em;
 }
-.para{
+.para {
   width: 629px;
-height: 270px;
-left: 581px;
-top: 121px;
+  height: 270px;
+  left: 581px;
+  top: 121px;
 
-font-family: Work Sans;
-font-style: normal;
-font-weight: 300;
-font-size: 18px;
-line-height: 150%;
-/* or 27px */
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
 
-letter-spacing: -0.02em;
+  letter-spacing: -0.02em;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
-.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+.carousel .control-arrow:before,
+.carousel.carousel-slider .control-arrow:before {
   margin: 0 5px;
   display: inline-block;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  content: '';
+  content: "";
 }
 
 .carousel .carousel-status {
