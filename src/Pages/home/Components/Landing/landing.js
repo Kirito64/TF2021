@@ -1,5 +1,6 @@
 import React from 'react';
 import "./landing.css";
+import {Link} from "react-router-dom"
 
 import Button from "../../../../Components/button/Button"
 
@@ -8,17 +9,17 @@ const Landing = () => {
       <div className="root-landing">
         <div className="top-landing">
           <h1>Tantra Fiesta 2021</h1>
-          <a href="/Pages/events/Event">
+          <Link to="/events" >
             <Button buttonSize="btn-hero-size" buttonStyle="btn-hero">
               Browse Events
             </Button>
-          </a>
+          </Link>
         </div>
         <div className="bottom-landing">
           <p>Proudly Presented By</p>
-          <h4>
+          <h3>
             Indian Institute of Information <br /> Technology, Nagpur
-          </h4>
+          </h3>
         </div>
       </div>
     );

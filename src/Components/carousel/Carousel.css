@@ -1,0 +1,106 @@
+.create-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  width: 72%;
+}
+
+.slick-slider {
+  display: flex !important;
+  justify-content: space-between !important;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100% !important;
+}
+
+.slick-list {
+  display: flex !important;
+  justify-content: center;
+}
+
+.slick-track {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slick-track .slick-slide {
+  width: 32% !important;
+  max-width: 20rem !important;
+}
+
+.slick-arrow {
+  display: none !important;
+}
+
+.slick-slide > div {
+  display: flex;
+}
+
+/* 
+customizing thumbs
+*/
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots ul {
+  display: flex;
+  width: 140px;
+  justify-content: space-between;
+}
+
+.slick-dots ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.6rem 1rem;
+}
+
+.slick-dots ul li button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #7f5cff !important;
+  border: none;
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+  font-size: 0;
+}
+
+.slick-dots ul .slick-active button {
+  width: 42px !important;
+  border-radius: 10px !important;
+}
+
+@media screen and (max-width: 1100px) {
+  .create-carousel {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .create-carousel{
+        margin-top: 1rem;
+    }
+  .slick-slide > div {
+    margin: 10px;
+  }
+  .slick-slider {
+    width: 70%;
+  }
+  .slick-list {
+    padding: 0 !important;
+  }
+  .slick-track .slick-slide {
+    width: 100% !important;
+    max-width: 20rem !important;
+  }
+}
