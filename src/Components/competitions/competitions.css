@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.competition-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Work Sans", sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: #e5e5e5;
+}
+
+.competition-container .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72%;
+  position: relative;
+  letter-spacing: -0.02em;
+  font-weight: 600;
+}
+
+.competition-container .header .view {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+  align-items: center;
+  position: absolute;
+  right: 1.625rem;
+  transform: translate(0, -50%);
+  font-weight: 600;
+}
+
+.view span, .view a{
+  color: #e5e5e5;
+  font-weight: lighter;
+}
+
+.competition-container .header .view img {
+  height: 0.75rem;
+}
+
+.competition-container .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  width: 72%;
+}
+
+@media screen and (max-width:1100px) {
+  .competition-container .carousel-container{
+    width: 100%;
+    padding:0 20px;
+  }
+   .competition-container .header{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+   .competition-container .header{
+    width: 100%;
+  }
+  .competition-container .carousel-container{
+    margin-top: 1rem;
+  }
+  .competition-container .header h1{
+    font-size: 1.6rem;
+  }
+  
+  .competition-container .header .view img {
+    height: 10px;
+}
+}
+
+@media screen and (max-width:450px) {
+  .competition-container .header .view {
+    width: 60px;
+    font-size: 12px;
+  }
+}
