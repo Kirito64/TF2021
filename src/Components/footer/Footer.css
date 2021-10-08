@@ -1,120 +1,128 @@
- .footer{
-  background: #300957;
-  width: 1900px;
-height: 614px;
-top: 3864px;
-position: absolute;
- 
-
-   
-  }
-  
-  h6{
-    color: darkgray;
-    font-size: .7rem;
-  }
-  .btn{
-    height: 1.3rem;
-    width: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .box1{
-    height: 1rem;
-    width: 1rem;
-    background-color: white;
-   
-    margin: .4rem;
-  
-    
-  }
-  .sec1{
-    height: 42px;
-  }
-.event{
+.Footer {
+  background-color: #300957;
+  height: 65vh;
+  display: flex;
+  flex-direction: row;
+}
+.content {
+  display: flex;
+  justify-content: space-around;
+  text-align: justify;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+}
+.query {
+  margin-left: 10rem;
+  width: 70%;
   display: flex;
   flex-direction: column;
- 
-width: 267px;
-height: 28px;
-
-
-font-family: Work Sans;
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 28px;
-letter-spacing: -0.02em;
-
-color: rgba(229, 229, 229, 0.54);
-
+  justify-content: space-around;
 }
-  .queryy{
-  width: 341px;
-height: 42px;
-left: 169px;
-top: 75px;
-
-font-family: Work Sans;
-font-style: normal;
-font-weight: 500;
-font-size: 36px;
-line-height: 42px;
-letter-spacing: -0.02em;
-
-color: #FFFFFF;
-position: absolute;
-  }
-.Adjust{
-  margin: 90px 0px 0px -130px;
+.media_icons {
+  width: 35%;
 }
-
-.follow{
-  position: absolute;
-width: 256px;
-height: 42px;
-left: 169px;
-top: 340px;
-
-font-family: Work Sans;
-font-style: normal;
-font-weight: 500;
-font-size: 36px;
-line-height: 42px;
-letter-spacing: -0.02em;
-
-color: #FFFFFF;
+.spon {
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.8rem;
+  margin-top: 2.8rem;
+  margin-bottom: 0.8rem;
 }
-
-.logo{
-  
-  height: 78px;
-  width: 80px;
-  padding: 12px;
-  
- 
+.for {
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.8rem;
 }
-.logos{
+.light_whitetext {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(177, 177, 177);
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+.box1 {
+  height: 50%;
+  width: 40%;
+}
+.Box {
   display: flex;
-  margin: 400px 0px 0px -865px;
-  
-
+  justify-content: space-around;
 }
-
-.us{
-  width: 254px;
-height: 28px;
-
-
-font-family: Work Sans;
-font-style: normal;
-font-weight: 530;
-font-size: 24px;
-line-height: 28px;
-
-
-color: rgba(255, 255, 255, 0.54);
-margin: 30px 0px 0px -855px;
-
+.media_icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 960px) {
+  .Footer {
+    align-items: justify;
+    flex-direction: column;
+  }
+  .query {
+    margin-top: 1rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5rem;
+    height: 60%;
+  }
+  .box1 {
+    width: 100%;
+    flex-direction: column;
+    margin-left: 5rem;
+    height: 40%;
+  }
+  .box2 {
+    margin-top: -2rem;
+  }
+  .sponsors {
+    margin-top: -2rem;
+    margin-bottom: 10rem;
+  }
+  .for {
+    font-size: 1.2rem;
+  }
+  .light_whitetext {
+    font-size: 0.8rem;
+  }
+  .spon {
+    font-size: 1.3rem;
+  }
+  .media_icons {
+    width: 70%;
+  }
+  .icons_logo {
+    transform: scale(0.6);
+  }
+  .icons {
+    transform: scale(0.6);
+    margin-left: -1rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .query {
+    margin-left: 2rem;
+  }
+  .box1 {
+    margin-left: 2rem;
+  }
+  .for {
+    font-size: 0.8rem;
+  }
+  .light_whitetext {
+    font-size: 0.7rem;
+  }
+  .spon {
+    font-size: 0.8rem;
+  }
+  .media_icons {
+    width: 85%;
+  }
+  .icons_logo {
+    transform: scale(0.5);
+  }
+  .icons {
+    transform: scale(0.5);
+    margin-left: -1rem;
+  }
 }

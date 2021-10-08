@@ -7,7 +7,7 @@ import Navbar from "./Components/navbar/Navbar";
 import Home from "./Pages/home/Home";
 import About from "./Pages/about/About";
 import Events from "./Pages/events/Events";
-// import Footer from "./Components/footer/Footer";
+import Footer from "./Components/footer/Footer";
 
 const App = () => {
   return (
@@ -26,7 +26,7 @@ const App = () => {
           </Route>
         </Switch>
       </Router>
-      {/* <Footer/> */}
+      <Footer />
     </>
   );
 };
