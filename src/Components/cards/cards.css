@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+.gallery {
+  position: relative;
+  width: 23rem;
+  height: 28.75rem;
+  font-family: Work Sans;
+  margin: 0rem 1.5rem;
+  background: rgba(0, 0, 0, 0.27);
+}
+
+div.gallery img {
+  width: 23rem;
+  height: 16.063rem;
+}
+
+.desc {
+  position: relative;
+  left: 1.938rem;
+}
+
+.one {
+  position: relative;
+  width: 23rem;
+  height: 2.625rem;
+  top: 1rem;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.625rem;
+  text-align: left;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.same {
+  display: flex;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  position: relative;
+  width: 7.875rem;
+  height: 3.75rem;
+  top: 2rem;
+  background: #7f5cff;
+  border-color: #7f5cff;
+  border-radius: 0.25rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.two {
+  position: relative;
+  width: 9rem;
+  height: 2.625rem;
+  left: 1.688rem;
+  top: 2.625rem;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(229, 229, 229, 0.54);
+}
+
+.three {
+  position: relative;
+  width: 11rem;
+  height: 1.313rem;
+  top: 3.75rem;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.313rem;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #7f5cff;
+  text-decoration: none;
+}

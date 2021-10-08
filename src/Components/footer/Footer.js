@@ -1,80 +1,156 @@
-import React from 'react'
-import './Footer.css'
+import React from "react";
+import TwitterIcon from "@material-ui/icons/Twitter";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import CheckBoxOutlineBlankIcon from "@material-ui/icons/CheckBoxOutlineBlank";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import "./footer.css";
 
-const Footer = () => {
-    return (<>
-         
- 
-  <footer className=" footer  text-white text-center text-lg-start ">
-     
-    <div  className="container    ">
-      <div  className="d-flex  flex-row justify-content-between mt-2 ">
-      <div className="sec1">
-      <h4 className=" queryy     ">
-              For Queries Contact
-            </h4>
-            <div className="Adjust" >
-            <h6 className="event">
-              Event Co-ordinators &#129125;
-            </h6>
-            <h6 className="event">tantrahelp@iiitn.ac.in</h6>
-            </div>
-      </div>
-      <div className="social">
-        <h1 className="follow">Follow us On</h1>
-        <div className="logos">
-        <a href="./"><img className="logo" src="https://seeklogo.com/images/T/twitter-logo-1DEF94C339-seeklogo.com.png" alt="" /></a>
-        <a href="./"><img className="logo" src="https://seeklogo.com/images/F/facebook-logo-264A8EFBA1-seeklogo.com.png" alt="" /></a>
-        <a href="./"><img className="logo" src="https://seeklogo.com/images/I/instagram-new-2016-glyph-logo-84CB825424-seeklogo.com.png" alt="" /></a>
-      
+function Footer() {
+  return (
+    <div className="Footer">
+      <div className="content">
+        <div className="query">
+          <p className="for">For Queries Contact</p>
+          <p className="light_whitetext">Event Co-ordinators &#129125;</p>
+          <p className="light_whitetext">tantrahelp@iiitn.ac.in</p>
         </div>
-        <div className="us">  <p >Contact with us here</p></div>
-       
-      </div>
-      <div>
-          
-          <div className="d-flex flex-row">
-         
-          </div>
-      </div>
-       </div>
-       
-          <div>
-          <h4 className="query  mt-3 ">
-        
-          </h4>
-          <div className="d-flex flex-row">
-          
-          </div>
-      </div>
-          
-         
-          
-
-           
-         
-        
- 
- 
-        
-         
-
-           
-           
-          
+        <div className="query">
+          <p className="for">Follow us on</p>
+          <p className="media_icons">
+            <TwitterIcon
+              className="icons_logo"
+              style={{
+                fontSize: 40,
+                color: "white",
+                marginTop: 5,
+              }}
+            />
+            <FacebookIcon
+              className="icons_logo"
+              style={{
+                fontSize: 40,
+                color: "white",
+                marginTop: 5,
+                marginLeft: 3,
+              }}
+            />
+            <InstagramIcon
+              className="icons_logo"
+              style={{
+                fontSize: 40,
+                color: "white",
+                marginTop: 5,
+                marginLeft: 3,
+              }}
+            />
+          </p>
+          <p className="light_whitetext">Connect with us here</p>
         </div>
-        
-      
-     
-   
-    
-    
-  </footer>
- 
- 
-    </>
-      
-    )
+      </div>
+      <div className="content sponsors">
+        <div className="box1">
+          <p className="spon">Our Sponsors</p>
+          <p className="Box">
+            <CheckBoxOutlineBlankIcon
+              className="icons"
+              style={{
+                fontSize: 40,
+                backgroundColor: "white",
+                color: "white",
+                borderRadius: 2,
+              }}
+            />
+            <CheckBoxOutlineBlankIcon
+              className="icons"
+              style={{
+                fontSize: 40,
+                backgroundColor: "white",
+                color: "white",
+                borderRadius: 2,
+              }}
+            />
+            <CheckBoxOutlineBlankIcon
+              className="icons"
+              style={{
+                fontSize: 40,
+                backgroundColor: "white",
+                color: "white",
+                borderRadius: 2,
+              }}
+            />
+            <CheckBoxOutlineBlankIcon
+              className="icons"
+              style={{
+                fontSize: 40,
+                backgroundColor: "white",
+                color: "white",
+                borderRadius: 2,
+              }}
+            />
+            <CheckBoxOutlineBlankIcon
+              className="icons"
+              style={{
+                fontSize: 40,
+                backgroundColor: "white",
+                color: "white",
+                borderRadius: 2,
+              }}
+            />
+          </p>
+        </div>
+        <div className="box1 box2">
+          <p className="spon">Our Co-Sponsors</p>
+          <p className="Box">
+            <CheckBoxOutlineBlankIcon
+              className="icons"
+              style={{
+                fontSize: 40,
+                backgroundColor: "white",
+                color: "white",
+                borderRadius: 2,
+              }}
+            />
+            <CheckBoxOutlineBlankIcon
+              className="icons"
+              style={{
+                fontSize: 40,
+                backgroundColor: "white",
+                color: "white",
+                borderRadius: 2,
+              }}
+            />
+            <CheckBoxOutlineBlankIcon
+              className="icons"
+              style={{
+                fontSize: 40,
+                backgroundColor: "white",
+                color: "white",
+                borderRadius: 2,
+              }}
+            />
+            <CheckBoxOutlineBlankIcon
+              className="icons"
+              style={{
+                fontSize: 40,
+                backgroundColor: "white",
+                color: "white",
+                borderRadius: 2,
+              }}
+            />
+            <CheckBoxOutlineBlankIcon
+              className="icons"
+              style={{
+                fontSize: 40,
+                backgroundColor: "white",
+                color: "white",
+                borderRadius: 2,
+              }}
+            />
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;
