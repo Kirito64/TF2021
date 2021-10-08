@@ -8,62 +8,83 @@
 }
 
 .competition-container {
-  background: linear-gradient(90.57deg, #1e034a 1.73%, #2c075a 101.09%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-family: "Work Sans", sans-serif;
-}
-
-.header {
-  display: flex;
-}
-
-h1 {
-  position: relative;
-  width: 19.188rem;
-  height: 3.5rem;
-  left: 29.906rem;
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 3rem;
-  line-height: 3.5rem;
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #ffffff;
-  margin: 2rem 0rem;
-}
-
-.view {
-  position: relative;
-  width: 8rem;
-  height: 3.5rem;
-  left: 52.188rem;
-  line-height: 3.5rem;
-  margin: 2rem 0rem;
-}
-
-.view span {
-  width: 5.75rem;
-  height: 1.75rem;
-  left: 0.625rem;
-  top: 0.625;
-  font-family: Work Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 1.75rem;
-  letter-spacing: -0.02em;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   color: #e5e5e5;
 }
 
-.view img {
+.competition-container .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72%;
   position: relative;
-  color: #e5e5e5;
-  left: 0.625rem;
+  letter-spacing: -0.02em;
+  font-weight: 600;
 }
 
-.card {
+.competition-container .header .view {
   display: flex;
-  height: 28.75rem;
-  flex: none;
-  margin: 0rem 1rem;
+  justify-content: space-between;
+  width: 80px;
+  align-items: center;
+  position: absolute;
+  right: 1.625rem;
+  transform: translate(0, -50%);
+  font-weight: 600;
+}
+
+.view span, .view a{
+  color: #e5e5e5;
+  font-weight: lighter;
+}
+
+.competition-container .header .view img {
+  height: 0.75rem;
+}
+
+.competition-container .carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5rem;
+  width: 72%;
+}
+
+@media screen and (max-width:1100px) {
+  .competition-container .carousel-container{
+    width: 100%;
+    padding:0 20px;
+  }
+   .competition-container .header{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+   .competition-container .header{
+    width: 100%;
+  }
+  .competition-container .carousel-container{
+    margin-top: 1rem;
+  }
+  .competition-container .header h1{
+    font-size: 1.6rem;
+  }
+  
+  .competition-container .header .view img {
+    height: 10px;
+}
+}
+
+@media screen and (max-width:450px) {
+  .competition-container .header .view {
+    width: 60px;
+    font-size: 12px;
+  }
 }

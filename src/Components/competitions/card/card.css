@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+.home-competition-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 12px;
+  width: 100%;
+  min-height: 23rem;
+  max-height: 24rem;
+  max-width: 19.125rem;
+  overflow: hidden;
+  font-family: "Work Sans";
+}
+
+.image {
+  height: 50%;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.home-competition-card .content {
+  height: 50%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.27);
+}
+
+.home-competition-card .content .heading {
+  margin-bottom: 1.2rem;
+}
+
+.heading h2 {
+  font-weight: 500;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.home-competition-card .content .button-deadline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.deadline {
+  color: rgba(229, 229, 229, 0.54);
+  font-weight: 400;
+}
+
+.deadline p {
+  font-weight: 300;
+}
+
+.download {
+  margin-bottom: 0.5rem;
+}
+
+.download a {
+  color: #7f5cff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .home-competition-card .content .button-deadline {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) and (min-width: 600px) {
+  .home-competition-card {
+    min-height: 26rem;
+    max-height: 26rem;
+  }
+  .home-competition-card .button {
+    width: 56%;
+  }
+  .home-competition-card .content .button-deadline {
+    justify-content: space-around;
+    margin-bottom: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-competition-card {
+    cursor: grab;
+    width: 250px;
+    min-height: 20rem;
+  }
+  .home-competition-card .content {
+    padding: 0.5rem;
+  }
+  .home-competition-card .content .button-deadline .deadline {
+    font-size: 0.84rem;
+    line-height: 1.2rem;
+  }
+  .home-competition-card .content .button-deadline {
+    margin-bottom: 2rem;
+  }
+}
