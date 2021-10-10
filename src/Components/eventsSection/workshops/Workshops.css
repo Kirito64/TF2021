@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.workshops-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Work Sans", sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: #e5e5e5;
+}
+
+.workshops-section .header h1{
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.workshop-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    width: 80%;
+}
+
+.workshop-cards > div {
+    margin: 0 25px;
+    cursor: context-menu;
+    min-width: 40%;
+}
+
+@media screen and (max-width:1024px) {
+    .workshop-cards > div {
+    min-width: 50%;
+}
+}
+
+@media screen and (max-width:780px) {
+    .workshop-cards{
+        flex-direction: column;
+    }
+    .workshop-cards > div{
+        margin: 10px 0;
+        min-width: 80%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .workshop-cards{
+        width: 100%;
+    }
+}

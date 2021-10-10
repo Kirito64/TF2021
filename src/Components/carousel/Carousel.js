@@ -1,10 +1,8 @@
 import React from "react";
-// import "./Carousel.css";
-import "./test.css"
+import "./Carousel.css"
 import Slider from "react-slick";
 
-const CarouselComponent = (props) => {
-  const { children } = props;
+const CarouselComponent = ({ children}) => {
 
   const settings = {
     dots: true,

@@ -11,7 +11,7 @@
   flex-direction: column;
   font-family: "Work Sans", sans-serif;
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   color: #e5e5e5;
 }
 
@@ -21,6 +21,7 @@
   align-items: center;
   width: 72%;
   position: relative;
+  color: #ffffff;
 }
 
 .container .header h1{
@@ -46,8 +47,4 @@
 
 .container .header .view img {
   height: 0.75rem;
-}
-
-.cardTest{
-  margin-top: 2rem;
 }

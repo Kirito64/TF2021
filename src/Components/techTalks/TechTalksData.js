@@ -9,6 +9,7 @@ export default [
     speakerDesignation: "Product Designer @Cred",
     date: "14 Oct 2021",
     time: "4 pm IST",
+    hasButton: true,
   },
   {
     id: 2,

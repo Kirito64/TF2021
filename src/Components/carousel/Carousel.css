@@ -1,106 +1,107 @@
-.create-carousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3rem;
-  width: 72%;
+.carousel-container {
+  margin: 20px 0;
+  max-width: 1104px;
+  width: 93%;
+  /* margin-left: 15px; */
 }
 
-.slick-slider {
+.carousel-container .slick-slider {
+  margin: 20px 0;
+  /* border: 2px solid white; */
+}
+
+.carousel-container .slick-track {
+  display: flex;
+  align-items: stretch;
+}
+ 
+.carousel-container .slick-slide {
   display: flex !important;
-  justify-content: space-between !important;
-  flex-direction: column;
-  overflow: hidden;
-  width: 100% !important;
+  align-self: stretch;
+  width: 100%;
+  height: unset;
 }
 
-.slick-list {
-  display: flex !important;
-  justify-content: center;
-}
-
-.slick-track {
+.carousel-container .slick-slide > div {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  height: 100%;
 }
 
-.slick-track .slick-slide {
-  width: 32% !important;
-  max-width: 20rem !important;
-}
-
-.slick-arrow {
-  display: none !important;
-}
-
-.slick-slide > div {
-  display: flex;
+.carousel-container .slick-slide > div > div {
+  width: 90%;
+  height: 100%;
 }
 
 /* 
 customizing thumbs
 */
-.slick-dots {
+.carousel-container .slick-dots {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translateY(10px);
 }
 
-.slick-dots ul {
+.carousel-container .slick-dots ul {
   display: flex;
-  width: 140px;
+  width: 150px;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
-.slick-dots ul li {
+.carousel-container .slick-dots ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.6rem 1rem;
+  width: 45px;
 }
 
-.slick-dots ul li button {
-  position: absolute;
+.carousel-container .slick-dots ul li button {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: #7f5cff !important; */
+  background: #7f5cff !important;
   border: none;
   cursor: pointer;
-  height: 8px;
-  width: 8px;
   border-radius: 50%;
-  transition: all 0.2s linear;
+  transition: all 0.3s ease;
   font-size: 0;
+  max-height: 8px;
+  width: 8px;
+  padding: 2px;
 }
 
-.slick-dots ul .slick-active button {
-  width: 42px !important;
-  border-radius: 10px !important;
+.carousel-container .slick-dots ul li button::before {
+  content: "";
+  width: 0;
+  height: 0;
 }
 
-@media screen and (max-width: 1100px) {
-  .create-carousel {
-    width: 100%;
-    padding: 20px;
+.carousel-container .slick-dots ul .slick-active button {
+  width: 45px !important;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .carousel-container .slick-slide {
+    margin: 0 10px;
+    width: 80%;
   }
+  .carousel-container .slick-slide > div > div {
+  width: 100%;
+  height: 100%;
+}
 }
 
 @media screen and (max-width: 600px) {
-    .create-carousel{
-        margin-top: 1rem;
-    }
-  .slick-slide > div {
-    margin: 10px;
+  .carousel-container {
+    margin: 1rem;
+    padding: 0 20px;
   }
-  .slick-slider {
-    width: 70%;
-  }
-  .slick-list {
-    padding: 0 !important;
-  }
-  .slick-track .slick-slide {
-    width: 100% !important;
-    max-width: 20rem !important;
+  .carousel-container .slick-slide > div > div {
+    width: 250px;
+    height: 280px;
   }
 }

@@ -12,7 +12,7 @@ const Card = (props) => {
         <div className="tech-talk-card">
             <div className="image">
                 <img src={speaker1} alt="" />
-                {hasButton ? "" : <Button buttonSize="btn-join-now-size" buttonStyle="btn-normal">Join Now</Button>}
+                {hasButton ? <Button buttonSize="btn-join-now-size" buttonStyle="btn-normal">Join Now</Button> : ""}
             </div>
             <div className="content">
                 <div className="heading">
