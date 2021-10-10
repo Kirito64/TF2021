@@ -32,7 +32,7 @@ const CarouselComponent = (props) => {
         },
       },
       {
-        breakpoint: 800,
+        breakpoint: 774,
         settings: {
           infinite: true,
           slidesToShow: 1,

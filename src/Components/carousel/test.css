@@ -1,6 +1,8 @@
 .carousel-container {
   margin: 20px 0;
-  margin-left: 15px;
+  max-width: 1104px;
+  width: 93%;
+  /* margin-left: 15px; */
 }
 
 .carousel-container .slick-slider {

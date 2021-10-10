@@ -2,7 +2,6 @@ import React from "react";
 import "./card.css";
 
 import Button from "../../button/Button";
-import competitionData from "../competitionData";
 
 const Card = (props) => {
   const { id, competitionImage, competitionTitle, competitionDeadline } = props;
