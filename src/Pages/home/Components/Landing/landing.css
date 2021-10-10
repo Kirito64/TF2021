@@ -22,6 +22,7 @@
     text-align: center;
     padding-top: 0rem;
     letter-spacing: 0.15rem;
+    color: #ffffff;
 }
 .top-landing button{
     margin-top: 3rem;
@@ -32,6 +33,7 @@
 .bottom-landing{
     text-align: center;
     margin-top: 9rem;
+    color: #ffffff;
 }
 .bottom-landing p{
     font-weight: 300;

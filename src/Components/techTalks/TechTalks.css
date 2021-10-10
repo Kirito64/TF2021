@@ -7,7 +7,7 @@
   max-width: 100%;
 }
 
-.competition-container {
+.tech-talk-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@
   color: #e5e5e5;
 }
 
-.competition-container .header {
+.tech-talk-container .header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,12 +27,12 @@
   color: #ffffff;
 }
 
-.competition-container .header h1{
+.tech-talk-container .header h1{
     font-weight: 600;
     letter-spacing: -0.02em;
 }
 
-.competition-container .header .view {
+.tech-talk-container .header .view {
   display: flex;
   justify-content: space-between;
   width: 80px;
@@ -48,31 +48,31 @@
   font-weight: lighter;
 }
 
-.competition-container .header .view img {
+.tech-talk-container .header .view img {
   height: 0.75rem;
 }
 
 @media screen and (max-width:1100px) {
-   .competition-container .header{
+   .tech-talk-container .header{
     width: 90%;
   }
 }
 
 @media screen and (max-width: 800px) {
-   .competition-container .header{
+   .tech-talk-container .header{
     width: 100%;
   }
-  .competition-container .header h1{
+  .tech-talk-container .header h1{
     font-size: 1.6rem;
   }
   
-  .competition-container .header .view img {
+  .tech-talk-container .header .view img {
     height: 10px;
 }
 }
 
 @media screen and (max-width:450px) {
-  .competition-container .header .view {
+  .tech-talk-container .header .view {
     width: 60px;
     font-size: 12px;
   }

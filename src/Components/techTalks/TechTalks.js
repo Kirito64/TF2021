@@ -1,19 +1,17 @@
 import React from "react";
-import "./competitions.css";
+import "./TechTalks.css";
 import arrow from "./assets/Arrow1.svg";
-import Card from "./card/card";
-
-
-// import competitionData
-import competitionData from "./competitionData";
+import Card from "./card/Card";
 
 import CarouselComponent from "../carousel/Carousel";
+import TechTalksData from "./TechTalksData";
 
-const Competitions = () => {
+const TechTalks = () => {
+
   return (
-    <div className="competition-container">
+    <div className="tech-talk-container">
       <div className="header">
-        <h1>Competitions</h1>
+        <h1>Technical Talks</h1>
         <a href="">
           <span className="view">
             <span>View All</span>
@@ -22,12 +20,14 @@ const Competitions = () => {
         </a>
       </div>
       <CarouselComponent>
-        {competitionData.map((competition) => {
-          return <Card key={competition.id} {...competition}></Card>;
-        })}
+        {
+          TechTalksData.map((techTalk)=>{
+              return <Card key={techTalk.id} {...techTalk}></Card>;
+          })
+        }
       </CarouselComponent>
     </div>
   );
 };
 
-export default Competitions;
+export default TechTalks;

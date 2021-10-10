@@ -5,12 +5,10 @@
   justify-content: space-between;
   flex-direction: column;
   border-radius: 12px;
-  width: 100%;
-  min-height: 23rem;
   max-height: 24rem;
-  max-width: 19.125rem;
   overflow: hidden;
   font-family: "Work Sans";
+  color: #ffffff;
 }
 
 .image {
@@ -49,12 +47,13 @@
 }
 
 .deadline {
-  color: rgba(229, 229, 229, 0.54);
   font-weight: 400;
+  color: rgba(229, 229, 229, 0.54);
 }
 
 .deadline p {
   font-weight: 300;
+  color: rgba(229, 229, 229, 0.54);
 }
 
 .download {
