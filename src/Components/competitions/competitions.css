@@ -22,10 +22,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 72%;
+  width: 70%;
   position: relative;
-  letter-spacing: -0.02em;
-  font-weight: 600;
+}
+
+.competition-container .header h1{
+    font-weight: 600;
+    letter-spacing: -0.02em;
 }
 
 .competition-container .header .view {
@@ -48,19 +51,7 @@
   height: 0.75rem;
 }
 
-.competition-container .carousel-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2.5rem;
-  width: 72%;
-}
-
 @media screen and (max-width:1100px) {
-  .competition-container .carousel-container{
-    width: 100%;
-    padding:0 20px;
-  }
    .competition-container .header{
     width: 90%;
   }
@@ -69,9 +60,6 @@
 @media screen and (max-width: 800px) {
    .competition-container .header{
     width: 100%;
-  }
-  .competition-container .carousel-container{
-    margin-top: 1rem;
   }
   .competition-container .header h1{
     font-size: 1.6rem;

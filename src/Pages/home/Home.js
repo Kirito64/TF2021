@@ -1,13 +1,15 @@
 import React from 'react';
 import "./Home.css"
 import Landing from "./Components/Landing/landing";
-// import Competitions from "../../Components/competitions/competitions"
+import FromTheTeam from '../../Components/fromTheTeam/FromTheTeam';
+import Competitions from "../../Components/competitions/competitions"
 
 const Home = () => {
     return (
         <div className="home-container" >
             <Landing></Landing>
-            {/* <Competitions></Competitions> */}
+            <FromTheTeam></FromTheTeam>
+            <Competitions></Competitions>
         </div>
     )
 }

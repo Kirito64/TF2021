@@ -1,5 +1,6 @@
 import React from "react";
-import "./Carousel.css"
+// import "./Carousel.css";
+import "./test.css"
 import Slider from "react-slick";
 
 const CarouselComponent = (props) => {
@@ -7,22 +8,52 @@ const CarouselComponent = (props) => {
 
   const settings = {
     dots: true,
-    infinite: true,
     swipeToSlide: true,
+    variableWidth: true,
+    adaptiveHeight: true,
+    infinite: true,
     slidesToShow: 3,
+    slidesToScroll: 3,
     appendDots: (dots) => (
       <div>
-        <ul style={{ margin: "0px" }}> {dots} </ul>
+        <ul style={{ marginTop: "0px" }}> {dots} </ul>
       </div>
     ),
     responsive: [
       {
-        breakpoint: 600,
+        breakpoint: 1024,
         settings: {
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 1,
+          variableWidth: true,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          infinite: true,
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
           variableWidth: true,
+          arrows: false,
+          autoplay: true,
+          autoplaySpeed: 2500,
+          speed: 800,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          variableWidth: true,
+          arrows: false,
           autoplay: true,
           autoplaySpeed: 2500,
           speed: 800,
@@ -32,7 +63,7 @@ const CarouselComponent = (props) => {
   };
 
   return (
-    <div className="create-carousel">
+    <div className="carousel-container">
       <Slider {...settings}>{children}</Slider>
     </div>
   );

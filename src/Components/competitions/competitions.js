@@ -3,6 +3,7 @@ import "./competitions.css";
 import arrow from "./assets/Arrow1.svg";
 import Card from "./card/card";
 
+
 // import competitionData
 import competitionData from "./competitionData";
 

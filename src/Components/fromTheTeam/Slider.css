@@ -1,0 +1,123 @@
+.from-carousel-container {
+  margin: 20px 0;
+  width: 80%;
+}
+
+/* .from-carousel-container .slick-slider {
+  border: 2px solid white;
+} */
+
+.from-carousel-container .slick-track {
+  display: flex;
+  align-items: stretch;
+}
+
+.from-carousel-container .slick-slide {
+  display: flex;
+  align-self: stretch;
+  width: 100%;
+  height: 100%;
+}
+
+.from-carousel-container .slick-slide > div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.from-carousel-container .slick-slide > div > div {
+  width: 1215.35px;
+  height: 100%;
+}
+
+/* 
+customizing thumbs
+*/
+.from-carousel-container .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(10px);
+}
+
+.from-carousel-container .slick-dots ul {
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.from-carousel-container .slick-dots ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+}
+
+.from-carousel-container .slick-dots ul li button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #7f5cff !important;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  font-size: 0;
+  max-height: 8px;
+  width: 8px;
+  padding: 2px;
+}
+
+.from-carousel-container .slick-dots ul li button::before {
+  content: "";
+  width: 0;
+  height: 0;
+}
+
+.from-carousel-container .slick-dots ul .slick-active button {
+  width: 42px !important;
+  border-radius: 10px;
+}
+
+/* 
+custom arrows
+*/
+.from-carousel-container .slick-arrow::before,
+.from-carousel-container .slick-arrow::after {
+  content: none;
+}
+
+.from-carousel-container .slick-arrow {
+  transform: scale(1);
+}
+
+.from-carousel-container .slick-prev {
+  transform: translateX(-8px);
+}
+
+.from-carousel-container .slick-next {
+  transform: translateX(8px);
+}
+
+.slick-disabled path{
+    fill-opacity: 0.2;
+}
+
+@media screen and (min-width: 600px) {
+  .from-carousel-container .slick-prev {
+    transform: translateX(-20px) scale(1.5);
+  }
+
+  .from-carousel-container .slick-next {
+    transform: translateX(20px) scale(1.5);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .from-carousel-container .slick-slide > div > div {
+    min-width: 100%;
+    height: 100%;
+    max-height: 100%;
+  }
+}

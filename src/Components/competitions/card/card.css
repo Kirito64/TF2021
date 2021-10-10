@@ -5,10 +5,7 @@
   justify-content: space-between;
   flex-direction: column;
   border-radius: 12px;
-  width: 100%;
-  min-height: 23rem;
   max-height: 24rem;
-  max-width: 19.125rem;
   overflow: hidden;
   font-family: "Work Sans";
 }

@@ -64,7 +64,7 @@ customizing thumbs
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #7f5cff !important;
+  /* background: #7f5cff !important; */
   border: none;
   cursor: pointer;
   height: 8px;
