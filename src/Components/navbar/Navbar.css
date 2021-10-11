@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background:  linear-gradient(90.57deg, #1E034A 1.73%, #2C075A 101.09%);;
+  background: linear-gradient(90.57deg, #1e034a 1.73%, #2c075a 101.09%);
   font-family: "Work Sans", sans-serif;
   color: #ffffff;
   font-weight: 400;
@@ -48,14 +48,14 @@
   padding: 5px 0;
 }
 
-.nav-menu a{
+.nav-menu a {
   text-decoration: none;
   color: #ffffff;
   font-size: 1.1rem;
 }
 
-.menu-title{
-    display: none;
+.menu-title {
+  display: none;
 }
 
 /* 
@@ -63,12 +63,12 @@
 Style link based on selected link
 ===================================
 */
-.selected{
-    border-bottom: 2px solid #e5e5e5;
-    padding-bottom: 3px;
-    font-weight: bolder;
-    border-bottom-left-radius: 2px ;
-    border-bottom-right-radius: 2px ;
+.selected {
+  border-bottom: 2px solid #e5e5e5;
+  padding-bottom: 3px;
+  font-weight: bolder;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
 }
 
 /* 
@@ -87,12 +87,15 @@ Responsiveness
 }
 
 @media screen and (max-width: 600px) {
-  .nav-menu a{
+  .nav-menu a {
     font-size: 1rem;
     font-weight: lighter;
   }
+  .tfSvg img {
+    width: 5rem;
+  }
   .nav-menu {
-    position: fixed;
+    position: absolute;
     right: 0;
     top: 0;
     background: #310a5d;
@@ -105,22 +108,22 @@ Responsiveness
   .hide {
     transform: translate(100%);
   }
-  .menu-title{
-      display: block;
+  .menu-title {
+    display: block;
   }
   .nav-menu ul {
     flex-direction: column;
     margin-top: 1.4rem;
-    margin-left: .625rem;
-  }
-
-  .nav-menu > ul > li{
-      font-size: 1.4rem;
-      font-weight: 600;
+    margin-left: 0.625rem;
   }
 
   .nav-menu > ul > li {
-      margin: 0.9rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  .nav-menu > ul > li {
+    margin: 0.9rem;
   }
 
   /* hamburger menu */
@@ -174,27 +177,27 @@ Responsiveness
   }
 }
 
-@media screen and (max-width:450px) {
-    .navbar h1{
+@media screen and (max-width: 450px) {
+  .navbar h1 {
     font-size: 1.5rem;
   }
   .nav-menu ul {
     margin-top: 1.2rem;
   }
-  .hamburger-btn{
+  .hamburger-btn {
     width: 25px;
     height: 25px;
     right: 15px;
     top: -2px;
   }
-  .hamburger{
+  .hamburger {
     width: 25px;
     height: 1.5px;
   }
   .hamburger::before,
   .hamburger::after {
-  width: 25px;
-  height: 1.5px;
+    width: 25px;
+    height: 1.5px;
   }
   .hamburger::before {
     transform: translateY(-10px);

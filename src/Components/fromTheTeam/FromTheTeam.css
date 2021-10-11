@@ -48,3 +48,37 @@
 .container .header .view img {
   height: 0.75rem;
 }
+
+@media screen and (max-width:1100px) {
+   .container .header{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+   .container .header{
+    width: 100%;
+  }
+  .container .header h1{
+    font-size: 1.6rem;
+  }
+  
+  .container .header .view img {
+    height: 10px;
+}
+}
+
+@media screen and (max-width:450px) {
+  .container .header .view {
+    width: 60px;
+    font-size: 11px;
+  }
+   .container .header .view img {
+    height: 9px;
+}
+  .container .header .view{
+    right: 13px;
+    margin-top: 2px;
+    width: 56px;
+  }
+}

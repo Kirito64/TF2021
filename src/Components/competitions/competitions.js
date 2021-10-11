@@ -11,7 +11,7 @@ import CarouselComponent from "../carousel/Carousel";
 
 const Competitions = () => {
   return (
-    <div className="competition-container">
+    <div id="competitions" className="competition-container">
       <div className="header">
         <h1>Competitions</h1>
         <a href="">

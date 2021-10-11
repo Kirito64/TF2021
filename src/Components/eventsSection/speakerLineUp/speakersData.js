@@ -13,7 +13,7 @@ export default [
     time: "4 pm IST",
   },
   {
-    id: 1,
+    id: 2,
     speakerImage: img,
     speakerName: "Jacob Robinson",
     speakerDesignation: "Product Designer @Cred",
@@ -24,7 +24,7 @@ export default [
     time: "4 pm IST",
   },
   {
-    id: 1,
+    id: 3,
     speakerImage: img,
     speakerName: "Jacob Robinson",
     speakerDesignation: "Product Designer @Cred",

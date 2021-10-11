@@ -27,9 +27,9 @@
   color: #ffffff;
 }
 
-.competition-container .header h1{
-    font-weight: 600;
-    letter-spacing: -0.02em;
+.competition-container .header h1 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
 }
 
 .competition-container .header .view {
@@ -43,7 +43,8 @@
   font-weight: 600;
 }
 
-.view span, .view a{
+.view span,
+.view a {
   color: #e5e5e5;
   font-weight: lighter;
 }
@@ -52,28 +53,36 @@
   height: 0.75rem;
 }
 
-@media screen and (max-width:1100px) {
-   .competition-container .header{
+@media screen and (max-width: 1100px) {
+  .competition-container .header {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 800px) {
-   .competition-container .header{
+  .competition-container .header {
     width: 100%;
   }
-  .competition-container .header h1{
+  .competition-container .header h1 {
     font-size: 1.6rem;
   }
-  
+
   .competition-container .header .view img {
     height: 10px;
-}
+  }
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width: 450px) {
   .competition-container .header .view {
     width: 60px;
-    font-size: 12px;
+    font-size: 11px;
+  }
+  .competition-container .header .view img {
+    height: 9px;
+  }
+  .competition-container .header .view {
+    right: 13px;
+    margin-top: 2px;
+    width: 56px;
   }
 }

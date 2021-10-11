@@ -27,19 +27,32 @@ const Navbar = () => {
         </div>
         <div className={`${show ? "nav-menu" : "nav-menu hide"}`}>
           <ul>
-            <li className="menu-title" >Menu</li> 
+            <li className="menu-title">Menu</li>
             <li>
-              <NavLink activeClassName="selected" exact to="/">
+              <NavLink
+                activeClassName="selected"
+                exact
+                to="/"
+                onClick={() => setShow((prevState) => !prevState)}
+              >
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink activeClassName="selected" to="/events">
+              <NavLink
+                activeClassName="selected"
+                to="/events"
+                onClick={() => setShow((prevState) => !prevState)}
+              >
                 Events
               </NavLink>
             </li>
             <li>
-              <NavLink activeClassName="selected" to="/about">
+              <NavLink
+                activeClassName="selected"
+                to="/about"
+                onClick={() => setShow((prevState) => !prevState)}
+              >
                 About Us
               </NavLink>
             </li>

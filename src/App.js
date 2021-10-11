@@ -13,20 +13,22 @@ const App = () => {
   return (
     <>
       <Router>
-        <Navbar></Navbar>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/events">
-            <Events />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-        </Switch>
+        <div className="app-container">
+          <Navbar></Navbar>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/events">
+              <Events />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+          </Switch>
+          <Footer />
+        </div>
       </Router>
-      <Footer />
     </>
   );
 };
