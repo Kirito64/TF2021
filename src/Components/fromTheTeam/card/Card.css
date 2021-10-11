@@ -94,7 +94,7 @@
 @media screen and (max-width: 860px) {
   .card {
     flex-direction: column;
-    width: 100%;
+    width: 75%;
     height: 500px;
   }
   .card-media {
@@ -138,6 +138,11 @@
 }
 
 @media screen and (max-width: 450px) {
+  .card {
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+  }
 .card-container .card-content h2 {
     margin-bottom: 1rem;
   }

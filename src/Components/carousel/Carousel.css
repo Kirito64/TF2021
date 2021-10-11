@@ -1,6 +1,6 @@
 .carousel-container {
   margin: 20px 0;
-  max-width: 1104px;
+  max-width: 1100px;
   width: 93%;
   /* margin-left: 15px; */
 }
@@ -14,7 +14,7 @@
   display: flex;
   align-items: stretch;
 }
- 
+
 .carousel-container .slick-slide {
   display: flex !important;
   align-self: stretch;
@@ -83,6 +83,16 @@ customizing thumbs
   border-radius: 10px;
 }
 
+@media screen and (min-width: 1000px) {
+  .carousel-container .slick-slide > div > div {
+    width: 100%;
+    height: 100%;
+  }
+  .carousel-container .slick-slide {
+    margin: 0 25px;
+    width: 80%;
+  }
+}
 
 @media screen and (max-width: 1000px) {
   .carousel-container .slick-slide {
@@ -90,9 +100,9 @@ customizing thumbs
     width: 80%;
   }
   .carousel-container .slick-slide > div > div {
-  width: 100%;
-  height: 100%;
-}
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {

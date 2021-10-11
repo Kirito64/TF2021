@@ -74,6 +74,14 @@
 @media screen and (max-width:450px) {
   .tech-talk-container .header .view {
     width: 60px;
-    font-size: 12px;
+    font-size: 11px;
+  }
+   .tech-talk-container .header .view img {
+    height: 9px;
+}
+  .tech-talk-container .header .view{
+    right: 13px;
+    margin-top: 2px;
+    width: 56px;
   }
 }

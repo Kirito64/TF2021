@@ -25,6 +25,13 @@
     position: absolute;
     bottom: 12px;
     left: 12px;
+    opacity: 0.9;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.tech-talk-card .image button:hover{
+    opacity: 1;
 }
 
 .tech-talk-card .content {

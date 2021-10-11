@@ -13,7 +13,7 @@ const SpeakersLineUp = () => {
             <div className="speaker-cards">
                 {
                     speakersData.map((speaker)=>{
-                       return <SpeakerCard {...speaker} ></SpeakerCard>
+                       return <SpeakerCard key={speaker.id} {...speaker} ></SpeakerCard>
                     })
                 }
             </div>

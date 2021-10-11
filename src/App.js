@@ -7,26 +7,28 @@ import Navbar from "./Components/navbar/Navbar";
 import Home from "./Pages/home/Home";
 import About from "./Pages/about/About";
 import Events from "./Pages/events/Events";
-// import Footer from "./Components/footer/Footer";
+import Footer from "./Components/footer/Footer";
 
 const App = () => {
   return (
     <>
       <Router>
-        <Navbar></Navbar>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/events">
-            <Events />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
-        </Switch>
+        <div className="app-container">
+          <Navbar></Navbar>
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/events">
+              <Events />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+          </Switch>
+          <Footer />
+        </div>
       </Router>
-      {/* <Footer/> */}
     </>
   );
 };

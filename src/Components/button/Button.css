@@ -3,7 +3,7 @@
 :root {
   --col-hero-btn-bg: linear-gradient(86.95deg,#7f5cff -38.28%,#45108a 155.03%);
   --col-normal-btn-bg: #7F5CFF;
-  --border-radius-hero-btn: 8px;
+  --border-radius-hero-btn: 15px;
   --border-radius-normal-btn: 4px;
   --col-btn-text: #ffffff;
   --font-family: "Work Sans", sans-serif;
@@ -18,12 +18,18 @@
   background: var(--col-hero-btn-bg);
   color: var(--col-btn-text);
   cursor: pointer;
-  box-shadow: 11px 8px 17px rgba(39, 3, 62, 0.78);;
+  box-shadow: 11px 8px 17px rgba(39, 3, 62, 0.78);
   font-family: var(--font-family);
   letter-spacing: 1px;
   border-radius: var(--border-radius-hero-btn);
   border: none;
   font-weight: 600;
+  transition: all 0.4s ease;
+}
+
+.btn-hero:hover{
+    box-shadow: 30px 20px 30px rgba(39, 3, 62, 0.78);
+    transform: scale(1.1);
 }
 
 .btn-normal{
