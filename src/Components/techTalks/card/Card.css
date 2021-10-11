@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+.tech-talk-card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: "Work Sans";
+  width: 10px;
+  color: #ffffff;
+}
+
+.tech-talk-card .image{
+    height: 50%;
+    position: relative;
+}
+
+.tech-talk-card .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.tech-talk-card .image button{
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+}
+
+.tech-talk-card .content {
+  height: 50%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.27);
+}
+
+.tech-talk-card .content .heading{
+    margin-bottom: 1.2rem;
+}
+
+.tech-talk-card .heading h2 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+
+.tech-talk-card .content .speaker{
+    margin-bottom: 1.2rem;
+}
+
+.tech-talk-card .content .speaker h3{
+    font-weight: 600;
+}
+
+.tech-talk-card .content .speaker h4{
+    font-weight: 400;
+}
+
+.tech-talk-card .content .date-time{
+    color: rgba(255, 255, 255, 0.52);
+}
+
+@media screen and (max-width: 860px) and (min-width: 600px) {
+  .tech-talk-card {
+    min-height: 26rem;
+    max-height: 26rem;
+    min-width: 219px;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+  .tech-talk-card {
+    cursor: grab;
+    width: 250px;
+    min-height: 20rem;
+  }
+  .tech-talk-card .content .heading{
+      margin-bottom: 1rem;
+  }
+  .tech-talk-card .content .speaker{
+      margin-bottom: 0.8rem;
+  }
+}

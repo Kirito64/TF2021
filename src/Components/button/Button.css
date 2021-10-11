@@ -52,9 +52,8 @@
 }
 
 .btn-join-now-size{
-     width: 6.01rem;
+    width: 7rem;
     height: 2.2rem;
-    padding: .5rem 1rem;
     font-size: 1rem;
 }
 
@@ -85,8 +84,7 @@ Responsiveness
         padding: .3125rem .5625rem;
     }
     .btn-join-now-size{
-        width: 5.135rem;
-        height: 1.825rem;
-        padding: .3125rem .5625rem;
+        width: 6.9rem;
+        height: 1.9rem;
     }
 }
