@@ -71,9 +71,9 @@
   }
 }
 
-@media screen and (max-width:1150px) and (min-width:600px) {
-  .home-competition-card .content .button-deadline button{
-        height: 2.35rem;
+@media screen and (max-width: 1150px) and (min-width: 600px) {
+  .home-competition-card .content .button-deadline button {
+    height: 2.35rem;
   }
   .home-competition-card .content .button-deadline .deadline {
     font-size: 0.84rem;
@@ -114,8 +114,32 @@
   }
 }
 
-@media screen and (max-width:380px){
-    .home-competition-card .content .button-deadline button{
-      width: 80px;
-    }
+@media screen and (max-width: 380px) {
+  .home-competition-card .content .button-deadline button {
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 1625px) {
+  .home-competition-card{
+    min-height: 28rem;
+  }
+  .heading h2 {
+    font-size: 2rem;
+  }
+  .deadline p {
+    font-size: 1.4rem;
+  }
+  .deadline {
+    font-size: 1.4rem;
+  }
+  .download {
+    font-size: 1.4rem;
+  }
+  .button-deadline .button {
+    width: 33%;
+  }
+  .button-deadline .deadline {
+    width: 63%;
+  }
 }

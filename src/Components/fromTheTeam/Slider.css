@@ -66,6 +66,7 @@ customizing thumbs
   font-size: 0;
   max-height: 8px;
   width: 8px;
+  min-width: 8px;
   padding: 2px;
 }
 
@@ -93,15 +94,15 @@ custom arrows
 }
 
 .from-carousel-container .slick-prev {
-  transform: translateX(-8px);
+  transform: translateX(-4px) scale(1.1);
 }
 
 .from-carousel-container .slick-next {
-  transform: translateX(8px);
+  transform: translateX(4px) scale(1.1);
 }
 
-.slick-disabled path{
-    fill-opacity: 0.2;
+.slick-disabled path {
+  fill-opacity: 0.2;
 }
 
 @media screen and (min-width: 600px) {
@@ -120,4 +121,39 @@ custom arrows
     height: 100%;
     max-height: 100%;
   }
+}
+
+@media screen and (min-width: 1580px) {
+  .from-carousel-container .slick-slide {
+    width: 100%;
+  }
+  .from-carousel-container .slick-slide > div > div {
+    width: 2800px;
+  }
+  .from-carousel-container .slick-prev {
+    transform: translateX(-40px) scale(2);
+  }
+
+  .from-carousel-container .slick-next {
+    transform: translateX(40px) scale(2);
+  }
+
+  /* thumb*/
+  .from-carousel-container .slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(20px);
+}
+  .from-carousel-container .slick-dots ul {
+    width: 250px;
+  }
+  .from-carousel-container .slick-dots ul li button {
+    max-height: 12px;
+    width: 12px;
+    padding: 2px;
+  }
+ .from-carousel-container .slick-dots ul .slick-active button {
+  min-width: 70px !important;
+}
 }

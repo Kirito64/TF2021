@@ -82,3 +82,9 @@
     width: 56px;
   }
 }
+
+@media screen and (min-width:1600px) {
+  .container .header h1{
+    font-size: 3rem;
+  }
+}

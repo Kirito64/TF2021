@@ -1,17 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 
 :root {
-  --col-hero-btn-bg: linear-gradient(86.95deg,#7f5cff -38.28%,#45108a 155.03%);
-  --col-normal-btn-bg: #7F5CFF;
-  --border-radius-hero-btn: 15px;
+  --col-hero-btn-bg: linear-gradient(
+    86.95deg,
+    #7f5cff -38.28%,
+    #45108a 155.03%
+  );
+  --col-normal-btn-bg: #7f5cff;
+  --border-radius-hero-btn: 10px;
   --border-radius-normal-btn: 4px;
   --col-btn-text: #ffffff;
   --font-family: "Work Sans", sans-serif;
 }
 
-*{
-    font-family: var(--font-family);
-    letter-spacing: -0.02em;
+* {
+  font-family: var(--font-family);
+  letter-spacing: -0.02em;
 }
 
 .btn-hero {
@@ -27,70 +31,85 @@
   transition: all 0.4s ease;
 }
 
-.btn-hero:hover{
-    box-shadow: 30px 20px 30px rgba(39, 3, 62, 0.78);
-    transform: scale(1.1);
+.btn-hero:hover {
+  box-shadow: 30px 20px 30px rgba(39, 3, 62, 0.78);
+  transform: scale(1.1);
 }
 
-.btn-normal{
-    background: var(--col-normal-btn-bg);
-    color: var(--col-btn-text);
-    cursor: pointer;
-    border-radius: var(--border-radius-normal-btn);
-    border: none;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btn-normal {
+  background: var(--col-normal-btn-bg);
+  color: var(--col-btn-text);
+  cursor: pointer;
+  border-radius: var(--border-radius-normal-btn);
+  border: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn-hero-size{
-    width: 15.625rem;
-    height: 5rem;
-    font-size: 1.7rem;
+.btn-hero-size {
+  width: 15.625rem;
+  height: 5rem;
+  font-size: 1.7rem;
 }
 
-.btn-register-size{
-    width: 95%;
-    height: 3.1rem;
-    padding: 1rem;
-    font-size: 1.1rem;
+.btn-register-size {
+  width: 95%;
+  height: 3.1rem;
+  padding: 1rem;
+  font-size: 1.1rem;
 }
 
-.btn-join-now-size{
-    width: 7rem;
-    height: 2.2rem;
-    font-size: 1rem;
+.btn-join-now-size {
+  width: 7rem;
+  height: 2.2rem;
+  font-size: 1rem;
 }
 
-.btn-register-now-size{
-    padding: .75rem 1.2rem;
-    font-size: 1rem;
-} 
-
+.btn-register-now-size {
+  padding: 0.75rem 1.2rem;
+  font-size: 1rem;
+}
 
 /* 
 ================
 Responsiveness
 ================
 */
-@media screen and (max-width:600px) {
-    .btn-hero-size{
-        width: 14rem;
-        height: 4.3rem;
-        font-size: 1.5rem;
-    }
-    .btn-register-size{
-        /* width: 4.955rem; */
-        height: 2.35rem;
-    }
-    .btn-register-now-size{
-        width: 6.99375rem;
-        height: 1.825rem;
-        padding: .3125rem .5625rem;
-    }
-    .btn-join-now-size{
-        width: 6.9rem;
-        height: 1.9rem;
-    }
+@media screen and (max-width: 600px) {
+  .btn-hero-size {
+    width: 14rem;
+    height: 4.3rem;
+    font-size: 1.5rem;
+  }
+  .btn-register-size {
+    /* width: 4.955rem; */
+    height: 2.35rem;
+  }
+  .btn-register-now-size {
+    width: 6.99375rem;
+    height: 1.825rem;
+    padding: 0.3125rem 0.5625rem;
+  }
+  .btn-join-now-size {
+    width: 6.9rem;
+    height: 1.9rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .btn-hero-size {
+    width: 20rem;
+    height: 7rem;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  .btn-hero-size {
+    width: 22rem;
+    height: 8rem;
+    font-size: 2.4rem;
+  }
 }
