@@ -55,6 +55,7 @@ const CarouselComponent = ({ children}) => {
           autoplay: true,
           autoplaySpeed: 2500,
           speed: 800,
+          pauseOnHover: true,
         },
       },
     ],

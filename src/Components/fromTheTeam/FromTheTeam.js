@@ -46,8 +46,7 @@ const FromTheTeam = () => {
       slidesToScroll: 1,
       arrow: true,
       autoplay: false,
-      speed: 1000,
-      autoplaySpeed: 3000,
+      speed: 400,
       nextArrow: <ArrowRight />,
       prevArrow: <ArrowLeft />,
       appendDots: (dots) => (

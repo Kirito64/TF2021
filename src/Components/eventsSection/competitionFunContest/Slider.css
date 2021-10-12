@@ -91,3 +91,25 @@ custom thumbs
   width: 45px !important;
   border-radius: 10px;
 }
+
+@media screen and (min-width: 1600px) {
+  .event-carousel {
+    max-width: 2200px;
+  }
+  .event-carousel .slick-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(20px);
+  }
+  .event-carousel .slick-dots ul {
+    width: 400px;
+  }
+  .event-carousel .slick-dots ul li button {
+    max-height: 12px;
+    min-width: 12px;
+  }
+  .event-carousel .slick-dots ul .slick-active button {
+    min-width: 60px !important;
+  }
+}

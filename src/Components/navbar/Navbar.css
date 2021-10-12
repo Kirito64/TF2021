@@ -23,6 +23,10 @@
   width: 85%;
 }
 
+.navbar h1{
+  font-size: 1.7rem;
+}
+
 .nav-logo {
   display: flex;
   align-items: center;
@@ -51,7 +55,7 @@
 .nav-menu a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .menu-title {
@@ -95,7 +99,7 @@ Responsiveness
     width: 5rem;
   }
   .nav-menu {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
     background: #310a5d;
@@ -205,4 +209,30 @@ Responsiveness
   .hamburger::after {
     transform: translateY(10px);
   }
+}
+
+
+@media screen and (min-width:1600px) {
+ .tfSvg img {
+  width: 8rem;
+} 
+ .navbar h1 {
+    font-size: 2.4rem;
+  }
+  .nav-menu a {
+  font-size: 1.6rem;
+}
+}
+
+@media screen and (min-width:2300px) {
+  .tfSvg img {
+  width: 10rem;
+} 
+ .navbar h1 {
+    font-size: 2.7rem;
+  }
+  .nav-menu a {
+  font-size: 2rem;
+}
+
 }
