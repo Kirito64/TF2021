@@ -121,22 +121,25 @@
 }
 
 @media screen and (min-width: 1625px) {
+  .home-competition-card{
+    min-height: 28rem;
+  }
   .heading h2 {
     font-size: 2rem;
   }
   .deadline p {
     font-size: 1.4rem;
-}
-.deadline{
-  font-size: 1.4rem;
-}
-.download{
-  font-size: 1.4rem;
-}
-.button-deadline .button{
-  width: 33%;
-}
-.button-deadline .deadline{
-  width: 63%;
-}
+  }
+  .deadline {
+    font-size: 1.4rem;
+  }
+  .download {
+    font-size: 1.4rem;
+  }
+  .button-deadline .button {
+    width: 33%;
+  }
+  .button-deadline .deadline {
+    width: 63%;
+  }
 }
