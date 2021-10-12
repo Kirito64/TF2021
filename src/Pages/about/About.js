@@ -1,9 +1,14 @@
 import React from 'react'
+import "./About.css"
+
+import Teams from "../../Components/aboutsSection/teams/Teams"
+import AboutFromTheTeam from "../../Components/aboutsSection/aboutFromTheTeam/AboutFromTheTeam"
 
 const About = () => {
     return (
         <div>
-            <h1>About Page</h1>
+            <Teams></Teams>
+            <AboutFromTheTeam></AboutFromTheTeam>
         </div>
     )
 }

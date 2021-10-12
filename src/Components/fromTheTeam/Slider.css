@@ -91,6 +91,7 @@ custom arrows
 
 .from-carousel-container .slick-arrow {
   transform: scale(1);
+  transition: all 0.4s ease;
 }
 
 .from-carousel-container .slick-prev {
@@ -103,6 +104,12 @@ custom arrows
 
 .slick-disabled path {
   fill-opacity: 0.2;
+}
+
+
+
+.slick-disabled path:hover {
+  transform: none;
 }
 
 @media screen and (min-width: 600px) {

@@ -4,7 +4,7 @@ import "./card.css";
 import Button from "../../button/Button";
 
 const Card = (props) => {
-  const { id, competitionImage, competitionTitle, competitionDeadline } = props;
+  const { id, competitionImage, competitionTitle, competitionDeadline, competitionLink, rulebookPdf } = props;
 
   return (
     <div className="home-competition-card">
@@ -17,11 +17,13 @@ const Card = (props) => {
         </div>
         <div className="button-deadline">
           <div className="button">
-            <Button
-              buttonSize="btn-register-size"
-              buttonStyle="btn-normal"
-              children="Register"
-            ></Button>
+            <a href={competitionLink} target="_blank" >
+              <Button
+                buttonSize="btn-register-size"
+                buttonStyle="btn-normal"
+                children="Register"
+              ></Button>
+            </a>
           </div>
           <div className="deadline">
             Registration Ends On <br />
@@ -29,7 +31,7 @@ const Card = (props) => {
           </div>
         </div>
         <div className="download">
-          <a href="">Download Rule Book</a>
+          <a href={rulebookPdf} download>Download Rule Book</a>
         </div>
       </div>
     </div>

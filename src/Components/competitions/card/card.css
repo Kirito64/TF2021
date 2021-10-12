@@ -34,6 +34,10 @@
   font-weight: 500;
 }
 
+.home-competition-card a{
+  text-decoration: none;
+}
+
 .button {
   display: flex;
   justify-content: center;

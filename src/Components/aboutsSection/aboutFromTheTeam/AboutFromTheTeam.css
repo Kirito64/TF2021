@@ -1,0 +1,26 @@
+.from-team {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.from-team .header h1{
+    font-size: 2.5rem;
+}
+
+.from-team .header{
+    margin-bottom: 2rem;
+}
+
+.from-team .cards{
+    width: 80%;
+}
+
+@media screen and (max-width:860px){
+    .from-team .cards > div{
+        max-height: none;
+    }
+}
