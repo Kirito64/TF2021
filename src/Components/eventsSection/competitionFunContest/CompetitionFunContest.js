@@ -21,7 +21,7 @@ const CompetitionFunContest = (props) => {
       slidesToShow: 1,
       slidesToScroll: 1,
       initialSlide: 0,
-      autoplay: true,
+      autoplay: false,
       autoplaySpeed: 2500,
       speed: 800,
       arrows: false,

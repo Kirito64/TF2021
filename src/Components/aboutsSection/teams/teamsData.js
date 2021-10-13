@@ -1,4 +1,4 @@
-import leadImage from "./assets/lead.png"
+import leadImage from "./assets/lead.svg"
 
 export default [
   {

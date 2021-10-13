@@ -3,7 +3,9 @@ import hackathonImg from "./assets/hackathon.png";
 import designathonImg from "./assets/designathon.png";
 import codingContestImg from "./assets/codingcontest.png";
 
-import designathonPdf from "./assets/pdfs/DesignathonRulebook.pdf"
+import designathonPdf from "./assets/pdfs/designathon.pdf";
+import hackofiestaPdf from "./assets/pdfs/hackofiesta.pdf";
+// import codefiestaPdf from "./assets/pdfs/designathon.pdf";
 
 // Testing data
 export default [
@@ -14,7 +16,7 @@ export default [
     competitionDeadline: "16th Oct 12:00am IST",
     competitionLink:
       "https://dare2compete.com/competition/hack-o-futurista-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-223255/",
-    rulebookPdf: "",
+    rulebookPdf: hackofiestaPdf,
   },
   {
     id: 2,
