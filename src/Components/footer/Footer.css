@@ -11,7 +11,7 @@
   background: #300957;
   width: 100%;
   bottom: 0;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   letter-spacing: -0.02em;
 }
 
@@ -27,6 +27,7 @@
   flex-direction: column;
   align-items: stretch;
   width: 50%;
+  margin-left: 4vw;
 }
 
 .follow {
@@ -64,7 +65,7 @@
 .query-follow .follow .icons {
   display: flex;
   justify-content: space-between;
-  width: 120px;
+  width: 180px;
 }
 
 .query-follow .follow .icons svg {
@@ -76,7 +77,7 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  width: 50%;
+  width: 40%;
 }
 
 .sponsors > div {
@@ -88,10 +89,13 @@
   padding: 3px;
 }
 
-.sponsors .square > svg {
-  margin-right: 20px;
+.sponsors .square img{
+  width: 5vw;
+  margin-right: 3vw;
 }
-
+.sponsors .square img.skillLync{
+  width: 8vw;
+}
 @media screen and (max-width: 1000px) {
   .footer {
     width: 90%;
@@ -117,5 +121,12 @@
   }
   .sponsors {
     width: 70%;
+  }
+  .sponsors .square img{
+    width: 15vw;
+    margin-right: 6vw;
+  }
+  .sponsors .square img.skillLync{
+    width: 25vw;
   }
 }
