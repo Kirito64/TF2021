@@ -13,10 +13,10 @@ const Events = () => {
         <div className="events-timeline">
           <Timeline></Timeline>
         </div>
-        <CompetitionFunContest sectionName="Competitions"></CompetitionFunContest>
-        <CompetitionFunContest sectionName="Fun Contests"></CompetitionFunContest>
-        <Workshops></Workshops>
-        <SpeakersLineUp></SpeakersLineUp>
+          <CompetitionFunContest sectionName="Competitions"></CompetitionFunContest>
+          <CompetitionFunContest sectionName="Fun Contests"></CompetitionFunContest>
+          <Workshops></Workshops>
+          <SpeakersLineUp></SpeakersLineUp>
       </div>
     );
 }

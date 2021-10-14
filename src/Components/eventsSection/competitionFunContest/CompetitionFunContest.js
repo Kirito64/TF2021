@@ -21,7 +21,7 @@ const CompetitionFunContest = (props) => {
       slidesToShow: 1,
       slidesToScroll: 1,
       initialSlide: 0,
-      autoplay: false,
+      autoplay: true,
       autoplaySpeed: 2500,
       speed: 800,
       arrows: false,
@@ -33,7 +33,7 @@ const CompetitionFunContest = (props) => {
     };
 
     return (
-      <div className="competition-fun-section">
+      <div id={sectionName.toLowerCase()} className="competition-fun-section">
         <div className="header">
           <h1>{sectionName}</h1>
         </div>

@@ -33,8 +33,11 @@
 }
 
 .speaker-cards > div {
-    margin: 35px 0;
+  display: flex;
+  justify-content: center;
+  margin: 35px 0;
 }
+
 
 @media screen and (max-width:600px) {
     .speaker-cards > div {
