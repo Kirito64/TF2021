@@ -1,7 +1,6 @@
 import React from 'react'
 import "./LeadCard.css"
-import polygon from "../assets/polygon.png"
-import leadImage from "../assets/lead.png"
+import polygon from "../assets/polygon.svg"
 
 const LeadCard = (props) => {
 

@@ -1,6 +1,6 @@
 .event-carousel {
   margin: 20px 0;
-  max-width: 1400px;
+  max-width: 1600px;
   width: 94%;
   /* margin-left: 15px; */
 }
@@ -13,6 +13,7 @@
 .event-carousel .slick-track {
   display: flex;
   align-items: stretch;
+  max-height: 208px;
 }
 
 .event-carousel .slick-slide {
@@ -54,8 +55,8 @@ custom thumbs
 
 .event-carousel .slick-dots ul {
   display: flex;
-  width: 250px;
-  justify-content: space-between;
+  width: 320px;
+  justify-content: center;
   margin-top: 20px;
 }
 
@@ -88,8 +89,14 @@ custom thumbs
 }
 
 .event-carousel .slick-dots ul .slick-active button {
-  width: 45px !important;
+  width: 35px !important;
   border-radius: 10px;
+}
+
+@media screen and (min-width:1380px){
+    .event-carousel{
+      width: 85%;
+    }
 }
 
 @media screen and (min-width: 1600px) {

@@ -5,10 +5,10 @@ import Button from '../../../button/Button';
 
 const SpeakerCard = (props) => {
 
-    const {speakerImage, speakerName, speakerDesignation, speakerDetails, isLive, date, time} = props;
+    const {speakerImage, speakerName, speakerDesignation, speakerDetails, isLive, date, time, animation} = props;
 
     return (
-      <div className="speaker-card">
+      <div data-aos={animation} className={`speaker-card`}>
         <div className="image">
           <img src={img} alt={speakerName} />
         </div>
@@ -18,9 +18,7 @@ const SpeakerCard = (props) => {
             <h4>{speakerDesignation}</h4>
           </div>
           <div className="speaker-details">
-            <p>
-              {speakerDetails}
-            </p>
+            <p>{speakerDetails}</p>
           </div>
           <div className="date-time">
             {isLive ? (

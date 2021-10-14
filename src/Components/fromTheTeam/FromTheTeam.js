@@ -5,6 +5,7 @@ import arrow from "./assets/arrow.svg";
 import Slider from "react-slick";
 import { ReactComponent as LeftActive } from "./assets/leftActive.svg";
 import { ReactComponent as RightActive } from "./assets/rightActive.svg";
+import { HashLink } from "react-router-hash-link";
 
 // importing data
 import FromTheTeamData from './FromTheTeamData';
@@ -60,15 +61,15 @@ const FromTheTeam = () => {
       <div className="container">
         <div className="header">
           <h1>From The Team</h1>
-          <a href="">
+          <HashLink smooth to="/about#fromTheTeam">
             <span className="view">
               <span>View All</span>
               <img src={arrow} alt="Arrow" />
             </span>
-          </a>
+          </HashLink>
         </div>
         <div className="from-carousel-container">
-          <Slider {...settings} >
+          <Slider {...settings}>
             {FromTheTeamData.map((card) => {
               return <Card key={card.id} {...card}></Card>;
             })}

@@ -13,21 +13,21 @@ const App = () => {
   return (
     <>
       <Router>
-        <div className="app-container">
-          <Navbar></Navbar>
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/events">
-              <Events />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-          </Switch>
-          <Footer />
-        </div>
+          <div className="app-container">
+            <Navbar></Navbar>
+            <Switch>
+              <Route exact path="/">
+                <Home />
+              </Route>
+              <Route path="/events">
+                <Events />
+              </Route>
+              <Route path="/about">
+                <About />
+              </Route>
+            </Switch>
+              <Footer />
+          </div>
       </Router>
     </>
   );

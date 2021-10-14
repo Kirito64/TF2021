@@ -33,7 +33,7 @@ const CompetitionFunContest = (props) => {
     };
 
     return (
-      <div className="competition-fun-section">
+      <div id={sectionName.toLowerCase()} className="competition-fun-section">
         <div className="header">
           <h1>{sectionName}</h1>
         </div>

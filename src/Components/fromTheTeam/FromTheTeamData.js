@@ -19,7 +19,7 @@ export default [
   {
     id: 3,
     img: polygon,
-    cardTitle: "A Message to honourable Guests and Participants",
+    cardTitle: "Our Message",
     cardPara:
       "IIIT Nagpur cordially invites you to one of the biggest technical festivals in the country - TantraFiesta’21. We have something for everyone here. Our events cover the most popular fields in the IT Industry and give you all a look at the vast amount of options and opportunities here. Our platform also helps you all expand your network and meet people. (Remember to join our discord!) So, if you are or wish to be a part of the technical world, this is the place for you! Please join us and make this fest even more successful. And to those of you who are participating in our competitions, all the best to you because the competition is going to be tough!",
   },

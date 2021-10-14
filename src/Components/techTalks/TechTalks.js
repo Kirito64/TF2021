@@ -5,6 +5,8 @@ import Card from "./card/Card";
 
 import CarouselComponent from "../carousel/Carousel";
 import TechTalksData from "./TechTalksData";
+import { HashLink } from "react-router-hash-link";
+
 
 const TechTalks = () => {
 
@@ -12,12 +14,12 @@ const TechTalks = () => {
     <div className="tech-talk-container">
       <div className="header">
         <h1>Technical Talks</h1>
-        <a href="">
+        <HashLink smooth to="/events#techTalks">
           <span className="view">
             <span>View All</span>
             <img src={arrow} alt="Arrow" />
           </span>
-        </a>
+        </HashLink>
       </div>
       <CarouselComponent>
         {

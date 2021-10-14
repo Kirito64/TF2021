@@ -11,6 +11,7 @@ export default [
     isLive: true,
     date: "14 Oct 2021",
     time: "4 pm IST",
+    animation: "zoom-in-up",
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ export default [
     isLive: false,
     date: "14 Oct 2021",
     time: "4 pm IST",
+    animation: "fade-up",
   },
   {
     id: 3,
@@ -33,5 +35,6 @@ export default [
     isLive: false,
     date: "14 Oct 2021",
     time: "4 pm IST",
+    animation: "slide-right",
   },
 ];
