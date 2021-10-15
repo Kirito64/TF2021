@@ -37,6 +37,22 @@
   min-width: 40%;
 }
 
+.workshop-cards > div > div{
+  text-align: center;
+}
+
+.workshop-cards .button-deadline{
+  display: none;
+}
+
+@media screen and (max-width:1536px) {
+  .workshop-cards > div{
+    max-width: 486px;
+    min-height:232px ;
+    overflow: hidden;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .workshop-cards > div {
     min-width: 50%;

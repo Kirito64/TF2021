@@ -14,6 +14,7 @@
   font-family: "Work Sans", sans-serif;
   color: #ffffff;
   font-weight: 400;
+  min-height: 104px;
 }
 
 .navbar {
@@ -91,6 +92,9 @@ Responsiveness
 }
 
 @media screen and (max-width: 600px) {
+  .navbar-container{
+    min-height: 84px;
+  }
   .nav-menu a {
     font-size: 1rem;
     font-weight: lighter;

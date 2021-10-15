@@ -1,17 +1,22 @@
-import leadImage from "./assets/lead.svg"
+import leadImage from "./assets/lead.png"
+import contentLeadImage from "./assets/content.png"
+import marketingLeadImage from "./assets/marketing.png"
+import eventLeadImage from "./assets/event.png"
+import tsImage from "./assets/ts.png"
+import designLeadImage from "./assets/design.png"
 
 export default [
   {
     id: 1,
     isLead: true,
-    image: leadImage,
+    image: tsImage,
     title: "Technical Secretary",
     name: "John Doe",
     email: "emaildoftc.iiitn.ac.in",
   },
   {
     id: 2,
-    image: leadImage,
+    image: contentLeadImage,
     title: "Content Team",
     name: "John Doe",
     email: "emaildoftc.iiitn.ac.in",
@@ -25,14 +30,14 @@ export default [
   },
   {
     id: 4,
-    image: leadImage,
+    image: designLeadImage,
     title: "Design Team",
     name: "John Doe",
     email: "emaildoftc.iiitn.ac.in",
   },
   {
     id: 5,
-    image: leadImage,
+    image: eventLeadImage,
     title: "Event Management Team",
     name: "John Doe",
     email: "emaildoftc.iiitn.ac.in",
@@ -46,7 +51,7 @@ export default [
   },
   {
     id: 7,
-    image: leadImage,
+    image: marketingLeadImage,
     title: "Social Media and Marketing Team",
     name: "John Doe",
     email: "emaildoftc.iiitn.ac.in",

@@ -60,29 +60,31 @@
 }
 
 .card-container .card-content p {
-  line-height: 1.6rem;
+  line-height: 2rem;
+  font-size: 1.1rem;
 }
 
 .card-content .read-btn {
   display: none;
 }
 
-@media screen and (max-width: 1400px) {
-  .card {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 1255px) {
-  .card {
-    width: 90%;
-  }
-}
-
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1422px) {
   .card {
     width: 100%;
   }
+  .card-container .card-content p {
+    font-size: 1.1rem;
+    line-height: 1.77rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .card-container .card-content p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1140px) {
   .card-container .card-content h2 {
     margin-bottom: 0.3rem;
   }
@@ -91,10 +93,10 @@
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 980px) {
   .card {
     flex-direction: column;
-    width: 75%;
+    width: 80%;
     height: 500px;
   }
   .card-media {
@@ -111,9 +113,14 @@
     line-height: 1.6em;
     transition: all 0.5s ease;
     height: 8em;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
     scroll-behavior: smooth;
     overflow: hidden;
     padding-right: 3px;
+    font-size: 1rem;
   }
   .card-content {
     padding: 2rem;
@@ -137,8 +144,8 @@
   }
 }
 
-@media screen and (max-width:600px) {
-  .card-content .read-btn{
+@media screen and (max-width: 600px) {
+  .card-content .read-btn {
     bottom: 2rem;
   }
 }
@@ -151,6 +158,9 @@
   }
   .card-container .card-content h2 {
     margin-bottom: 1rem;
+  }
+  .card-content .read-btn {
+    bottom: 1rem;
   }
 }
 

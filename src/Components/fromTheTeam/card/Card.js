@@ -5,7 +5,7 @@ import polygon from "../assets/polygon.png";
 const Card = (props) => {
   const [readMore, setReadMore] = useState(true);
 
-  const {img, cardTitle, cardPara} = props;
+  const {img, cardTitle, cardPara, animation} = props;
 
   const media = useRef(null)
   const content = useRef(null)
@@ -31,7 +31,7 @@ const Card = (props) => {
   }
 
   return (
-    <div className="card-container">
+    <div data-aos={animation} className="card-container">
       <div className="card">
         <div ref={media} className="card-media">
           <img src={img} alt="media" />
@@ -41,7 +41,7 @@ const Card = (props) => {
             <h2>{cardTitle}</h2>
           </div>
           <div className="card-para">
-            <p ref={paraRef} >{cardPara}</p>
+            <p ref={paraRef}>{cardPara}</p>
           </div>
           <button className="read-btn" onClick={More}>
             {readMore ? "Read More" : "Read Less"}

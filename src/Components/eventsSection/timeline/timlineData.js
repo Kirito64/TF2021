@@ -1,21 +1,18 @@
 import React from "react"
+import { HashLink } from "react-router-hash-link";
 
 export default [
   {
     id: 1,
     time: "16 Oct, 2021",
-    event: (
-      <p>
-        Opening Ceremony <br /> Hackathons, Contests, <br /> Outsets
-      </p>
-    ),
+    event: <p>BGMI Round 1</p>,
   },
   {
     id: 2,
     time: "16 Oct, 2021",
     event: (
       <p>
-        Speaker 1 <br /> Technical Talk
+        Valorant Game <br /> Round 1
       </p>
     ),
   },
@@ -24,7 +21,7 @@ export default [
     time: "16 Oct, 2021",
     event: (
       <p>
-        Speaker 1 <br /> Technical Talk
+        Dr. Debanik Roy, <br /> Technical Talk
       </p>
     ),
   },
@@ -33,22 +30,31 @@ export default [
     time: "16 Oct, 2021",
     event: (
       <p>
-        Speaker 1 <br /> Technical Talk
+        Cosmos <br /> Quiz
       </p>
     ),
   },
   {
     id: 5,
-    time: "16 Oct, 2021",
+    time: "17 Oct, 2021",
     event: (
       <p>
-        Speaker 1 <br /> Technical Talk
+        Chess <br /> Round 1
       </p>
     ),
   },
   {
     id: 6,
-    time: "24 Oct, 2021",
-    event: <p>Closing Ceremony <br /> winner names and <br />announcements</p>,
+    time: "17 Oct, 2021",
+    event: (
+      <p>
+        BGMI Semi Finals{" "}
+        <HashLink to="/calendar" smooth>
+          <span
+            style={{ display: "inline-block", color: "#c444be" }}
+          >{`View All >>`}</span>
+        </HashLink>{" "}
+      </p>
+    ),
   },
 ];
