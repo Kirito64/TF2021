@@ -1,6 +1,6 @@
 import React from 'react'
 import "./LeadCard.css"
-import polygon from "../assets/polygon.svg"
+import {ReactComponent as Polygon} from "../assets/polygon.svg"
 
 const LeadCard = (props) => {
 
@@ -10,7 +10,7 @@ const LeadCard = (props) => {
       <div className="lead-card">
         <div className="lead-image">
           <img src={image} alt="leadImage" />
-          <img src={polygon} alt="designPolygon" />
+          <Polygon></Polygon>
         </div>
         <div className="lead-details">
           <h2>{title}</h2>

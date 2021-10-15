@@ -18,13 +18,25 @@
 .heading h1 {
   text-align: center;
   letter-spacing: -0.02em;
+  position: relative;
+}
+
+.heading h1 svg{
+  position: absolute;
+  transform: translate(0,20%);
+  margin-left: 1.2rem;
+  fill: white;
+  cursor: pointer;
+  fill-opacity: 0.9;
+  background: #2d0445;
+  padding:2px;
 }
 
 .timeline {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 3rem ;
+  margin: 3rem;
   width: 95%;
   position: relative;
   height: 150px;
@@ -41,7 +53,7 @@
   text-align: center;
 }
 
-.time p{
+.time p {
   color: rgba(255, 255, 255, 0.54);
 }
 
@@ -55,49 +67,75 @@
   padding-top: 3.2rem;
 }
 
-.event h3 p{
+.event h3 p {
   font-size: 1rem;
   letter-spacing: 0.8px;
   font-weight: 500;
 }
 
-.circle-container{
+.circle-container {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   width: 88%;
   display: flex;
   justify-content: space-between;
-  background: #7F5CFF;
+  background: #7f5cff;
   height: 4px;
   border-radius: 5px;
 }
 
-.circle{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
-.outer-circle{
-    width: 14px;
-    height: 14px;
+.outer-circle {
+  width: 14px;
+  height: 14px;
 }
 
-.inner-circle{
-    position: absolute;
-    width: 9px;
-    height: 9px;
+.inner-circle {
+  position: absolute;
+  width: 9px;
+  height: 9px;
 }
 
-@media screen and (min-width:1900px) {
-.circle-container{
-  width: 90%;
+.overlay{
+  position: absolute;
 }
-.heading h1 {
+
+@media screen and (min-width: 1900px) {
+  .circle-container {
+    width: 90%;
+  }
+  .heading h1 {
     font-size: 3rem;
-  
+  }
 }
+
+@media screen and (min-width: 850px) {
+  .mobile-only{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .large-only{
+    display: none;
+  }
+  .mobile-timeline-btn{
+    width: 100px;
+    height: 40px;
+    margin-top: 2rem;
+    background: #240442;
+    border: 3px solid black;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
 }

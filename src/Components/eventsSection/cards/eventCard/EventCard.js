@@ -20,7 +20,7 @@ const EventCard = (props) => {
 
     
     var x = window.matchMedia("(max-width: 850px)");
-    var y = window.matchMedia("min-width: 850px");
+    var y = window.matchMedia("(min-width: 850px)");
 
     const hideInfo = ()=>{
       setShow(false);
@@ -36,8 +36,8 @@ const EventCard = (props) => {
         </div>
         <div
           ref={paraRef}
-          onMouseOver={showInfo}
-          onMouseOut={hideInfo}
+          onMouseOver={y.matches ? showInfo : ()=>{}}
+          onMouseOut={y.matches ? hideInfo : ()=>{}}
           className="para"
         >
           {para}

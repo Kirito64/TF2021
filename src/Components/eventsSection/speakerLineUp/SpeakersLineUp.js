@@ -9,7 +9,7 @@ import "aos/dist/aos.css"
 const SpeakersLineUp = () => {
 
     useEffect(()=>{
-      Aos.init({duration:1000})
+      Aos.init({duration:1200})
     }, [])
 
     return (
@@ -22,8 +22,6 @@ const SpeakersLineUp = () => {
             return (
               <Spring
                 key={speaker.id}
-                from={{ marginRight: "130%" }}
-                to={{ marginRight: "0%" }}
               >
                 {(styles) => (
                   <animated.div style={styles}>

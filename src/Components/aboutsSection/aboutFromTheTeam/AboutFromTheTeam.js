@@ -1,10 +1,17 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import "./AboutFromTheTeam.css"
 
 import Card from "../../../Components/fromTheTeam/card/Card"
 import fromTheTeamData from '../../fromTheTeam/FromTheTeamData'
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const AboutFromTheTeam = () => {
+
+    useEffect(() => {
+      Aos.init({ duration: 1000 });
+    }, []);
+
     return (
       <div className="from-team">
         <div className="header">

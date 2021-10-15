@@ -19,7 +19,7 @@ const Home = () => {
       <div data-aos="zoom-in-up">
         <FromTheTeam></FromTheTeam>
       </div>
-      <div data-aos-duration="500" data-aos="fade-down">
+      <div data-aos-duration="800" data-aos="fade-in">
         <Competitions></Competitions>
       </div>
       <div data-aos-duration="500" data-aos="fade-down">
