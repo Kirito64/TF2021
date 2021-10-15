@@ -5,10 +5,10 @@ import Button from '../../../button/Button';
 
 const SpeakerCard = (props) => {
 
-    const {speakerImage, speakerName, speakerDesignation, speakerDetails, isLive, date, time, animation} = props;
+    const {speakerImage, speakerName, speakerDesignation, speakerDetails, isLive, date, time, animation, joinLink} = props;
 
     return (
-      <div data-aos={animation} className={`speaker-card`}>
+      <div data-aos={animation} className="speaker-card">
         <div className="image">
           <img src={img} alt={speakerName} />
         </div>
@@ -17,29 +17,19 @@ const SpeakerCard = (props) => {
             <h2>{speakerName}</h2>
             <h4>{speakerDesignation}</h4>
           </div>
-          <div className="speaker-details">
-            <p>{speakerDetails}</p>
-          </div>
+          <div className="speaker-details">{speakerDetails}</div>
           <div className="date-time">
-            {isLive ? (
-              <>
-                <div className="btn-para">
-                  <Button
-                    buttonStyle="btn-normal"
-                    buttonSize="btn-join-now-size"
-                  >
-                    Join Now
-                  </Button>
-                  <p>Live Now</p>
-                </div>
-              </>
-            ) : (
-              <>
-                <p>Date: {date}</p>
-                <p>Time: {time}</p>
-              </>
-            )}
+            <p>Date: {date}</p>
+            <p>Time: {time}</p>
           </div>
+        </div>
+        <div></div>
+        <div className="btn-para">
+          <a href={joinLink}>
+            <Button buttonStyle="btn-normal" buttonSize="btn-join-now-size">
+              Register
+            </Button>
+          </a>
         </div>
       </div>
     );
