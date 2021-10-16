@@ -101,7 +101,7 @@ custom thumbs
 
 @media screen and (min-width: 1600px) {
   .event-carousel {
-    max-width: 2200px;
+    max-width: 1300px;
   }
   .event-carousel .slick-dots {
     display: flex;

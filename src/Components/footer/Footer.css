@@ -17,17 +17,16 @@
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: flex-start;
-  width: 80%;
+  width: 90%;
 }
 
 .query-follow {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  width: 50%;
-  margin-left: 4vw;
+  width: 30%;
 }
 
 .follow {
@@ -37,6 +36,7 @@
 }
 
 .footer-container a {
+  display: flex;
   text-decoration: none;
 }
 
@@ -56,8 +56,12 @@
   color: #ffffff;
 }
 
+.footer-container .query-follow h2 {
+  line-height: 2.3rem;
+}
+
 .footer-container .footer p {
-  margin: 4px 0;
+  margin: 5px 0;
   line-height: 2rem;
   color: rgba(229, 229, 229, 0.54);
 }
@@ -65,7 +69,7 @@
 .query-follow .follow .icons {
   display: flex;
   justify-content: space-between;
-  width: 180px;
+  width: 200px;
 }
 
 .query-follow .follow .icons svg {
@@ -73,43 +77,83 @@
   width: 24px;
 }
 
-.sponsors {
+.sponsors1 {
   display: flex;
   flex-direction: column;
   align-items: stretch;
   width: 40%;
 }
 
-.sponsors > div {
+.sponsors2 {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 30%;
+}
+
+.sponsors1 > div,
+.sponsors2 > div {
   margin: 20px 0;
 }
 
-.sponsors .square {
+.sponsors1 .square {
   display: flex;
-  padding: 3px;
 }
 
-.sponsors .square img{
-  width: 5vw;
-  margin-right: 3vw;
+.sponsors1 .square img,
+.sponsors2 .square img {
+  width: 80px;
+  height: 80px;
+  margin-right: 1.5rem;
+  border-radius: 8px;
+  background: #ffffff;
 }
-.sponsors .square img.skillLync{
-  width: 8vw;
-}
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1250px) {
   .footer {
-    width: 90%;
+    width: 100%;
+  }
+  .query-follow {
+    width: 30%;
+  }
+  .sponsors2 {
+    width: 30%;
+  }
+  .sponsors1 {
+    width: 35%;
+    margin-right: 2rem;
+  }
+  .sponsors1 .square img,
+  .sponsors2 .square img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 840px) {
+  .sponsors1 {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .footer {
     width: 100%;
     flex-direction: column;
   }
+  .sponsors1 {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .sponsors2 {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
   .footer-container {
     padding: 1.5rem;
   }
@@ -119,14 +163,18 @@
   .query-follow {
     width: 100%;
   }
-  .sponsors {
-    width: 70%;
+  .sponsors1 {
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  .sponsors .square img{
-    width: 15vw;
-    margin-right: 6vw;
+  .sponsors2 {
+    flex-direction: column;
+    justify-content: space-between;
   }
-  .sponsors .square img.skillLync{
-    width: 25vw;
+  .sponsors1 .square img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
   }
 }
