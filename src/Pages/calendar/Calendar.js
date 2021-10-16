@@ -292,7 +292,7 @@ const Calendar = () => {
                           event.title
                         )}&details=Attend%20the%20event%20for%20${encodeURIComponent(
                           event.title
-                        )}%20Thanks!&location=TantraFiesta2k21%20IIITN&dates=202110${
+                        )}%20${event.type.includes("techtalk") ? "by" : ""}%20${event.speaker ? event.speaker : "hosted by Tantrafiesta 2k21"}%2C%20Thanks!&location=TantraFiesta2k21%20IIITN&dates=202110${
                           event.day
                         }T${event.startHour}${event.startMinute}00/202110${
                           event.endDay ? event.endDay : event.day
