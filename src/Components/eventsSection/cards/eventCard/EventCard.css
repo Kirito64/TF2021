@@ -74,6 +74,9 @@
 
 @media screen and (min-width: 1600px) {
   .event-card .para {
-    min-height: 20px;
+    min-height: 18px;
+  }
+  .button-deadline .deadline p{
+    font-size: 1rem;
   }
 }
