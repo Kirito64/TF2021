@@ -357,6 +357,7 @@ export default [
   {
     id: 20,
     title: "Future of Transportation",
+    speaker: "Mr. Vivek Umapathi",
     date: "23rd Oct, 2021",
     time: "12:00pm to 01:00pm",
     isLive:

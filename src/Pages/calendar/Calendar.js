@@ -132,8 +132,8 @@ const Calendar = () => {
                 <div className="card-time">
                   <h4>{event.time}</h4>
                   {event.type.includes("hackofuturista") ? (
-                    <p style={{ color: "#00f7f7", lineHeight: "1.6rem" }}>
-                      HackFuturista
+                    <p style={{ color: "cyan", lineHeight: "1.6rem" }}>
+                      Hack-o-Futurista
                     </p>
                   ) : (
                     ""
@@ -146,7 +146,7 @@ const Calendar = () => {
                     ""
                   )}
                   {event.type.includes("techtalk") ? (
-                    <p style={{ color: "cyan", lineHeight: "2.2rem" }}>
+                    <p style={{ color: "#f7e4c7", lineHeight: "2.2rem" }}>
                       {event.speaker}
                     </p>
                   ) : (
