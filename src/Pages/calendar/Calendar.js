@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Calendar.css";
 
 import calendarData from "./calendarData";
@@ -8,6 +8,9 @@ const Calendar = () => {
   const [heading, setHeading] = useState("CALENDAR");
   const modifiedCalendarData = calendarData.slice(0, 30);
   const [data, setData] = useState(calendarData);
+  const [isClose, setisClose] = useState(false);
+
+  const openedBtn = useRef([]);
 
   const Tags = [
     "calendar",
@@ -24,12 +27,12 @@ const Calendar = () => {
 
   let val = calendarData.filter((event) => event.type.includes("techtalk"));
 
-  console.log(val[0].type[0].toUpperCase());
+  // console.log(val[0].type[0].toUpperCase());
 
   const Sort = (e) => {
     e.preventDefault();
     const type = e.target.innerText;
-    console.log(e.target.innerText);
+    // console.log(e.target.innerText);
     setHeading(type.toUpperCase());
 
     const sortedData = calendarData.filter((event) =>
@@ -49,15 +52,35 @@ const Calendar = () => {
 
     setHeading(e.target.className.toUpperCase());
 
-    console.log(currentStatus);
-    const isLiveData = calendarData.filter((event) => event.isLive === true);
+    // console.log(currentStatus);
+    const isLiveData = calendarData.filter(
+      (event) =>
+        checkIsLive(
+          event.day,
+          event.endDay ? event.endDay : event.day,
+          event.startHour,
+          event.startMinute,
+          event.endHour,
+          event.endMinute
+        ) === true
+    );
 
     const isUpcomingData = calendarData.filter(
-      (event) => event.isUpcoming === true
+      (event) =>
+        checkIsUpcoming(event.day, event.startHour, event.startMinute) === true
     );
 
     const isEndedData = calendarData.filter(
-      (event) => event.isLive === false && event.isUpcoming === false
+      (event) =>
+        checkIsLive(
+          event.day,
+          event.endDay ? event.endDay : event.day,
+          event.startHour,
+          event.startMinute,
+          event.endHour,
+          event.endMinute
+        ) === false &&
+        checkIsUpcoming(event.day, event.startHour, event.startMinute) === false
     );
 
     if (e.target.className === "live") {
@@ -93,6 +116,62 @@ const Calendar = () => {
       }
     }
   };
+
+
+  // Google Calendar Button
+  const buttonsRef = useRef([]);
+
+  useEffect(() => {
+    buttonsRef.current = buttonsRef.current.slice(0, calendarData.length);
+  }, [calendarData]);
+
+  const displayButton = (e) => {
+    e.preventDefault();
+    // console.log(e.target);
+    if (e.target.style.transform === "rotateZ(135deg)") {
+      e.target.style.transform = "rotateZ(0deg)";
+      e.target.style.color = "palegoldenrod";
+    } else {
+      e.target.style.transform = "rotateZ(135deg)";
+      e.target.style.color = "white";
+    }
+
+    if (buttonsRef.current[e.target.id].classList.contains("displayed")) {
+      buttonsRef.current[e.target.id].classList.remove("displayed");
+    } else {
+      buttonsRef.current[e.target.id].classList.add("displayed");
+    }
+  };
+
+  // Live, Upcoming, Ended Functionality
+
+  var newCurrentTime = new Date();
+  var newCurrentDate =
+    newCurrentTime.getFullYear() +
+    "-" +
+    (newCurrentTime.getMonth() + 1) +
+    "-" +
+    newCurrentTime.getDate();
+
+  const checkIsLive = (
+    day,
+    endDay,
+    startHour,
+    startMinute,
+    endHour,
+    endMinute
+  ) => {
+    return newCurrentTime >=
+      new Date(2021, 9, day, startHour, startMinute, 1) &&
+      newCurrentTime <=
+        new Date(2021, 9, endDay ? endDay : day, endHour, endMinute, 1)
+      ? true
+      : false;
+  };
+
+  const checkIsUpcoming = (day,startHour,startMinute)=>{
+    return newCurrentTime < new Date(2021, 9, day, startHour, startMinute, 1); 
+  }
 
   return (
     <div className="calendar">
@@ -155,9 +234,20 @@ const Calendar = () => {
                 </div>
                 <div className="status">
                   <p>
-                    {event.isLive ? (
+                    {checkIsLive(
+                      event.day,
+                      event.endDay ? event.endDay : event.day,
+                      event.startHour,
+                      event.startMinute,
+                      event.endHour,
+                      event.endMinute
+                    ) ? (
                       <span style={{ background: "#17d77f" }}></span>
-                    ) : event.isUpcoming ? (
+                    ) : checkIsUpcoming(
+                        event.day,
+                        event.startHour,
+                        event.startMinute
+                      ) ? (
                       <span style={{ background: "yellow" }}></span>
                     ) : (
                       <span style={{ background: "red" }}></span>
@@ -165,8 +255,56 @@ const Calendar = () => {
                   </p>
                 </div>
                 <div className="number">
-                  <p>{index + 1}</p>
+                  <p>{event.id}</p>
                 </div>
+                {!(
+                  checkIsUpcoming(
+                    event.day,
+                    event.startHour,
+                    event.startMinute
+                  ) === false &&
+                  checkIsLive(
+                    event.day,
+                    event.endDay ? event.endaDay : event.day,
+                    event.startHour,
+                    event.startMinute,
+                    event.endHour,
+                    event.endMinute
+                  ) === false
+                ) ? (
+                  <div>
+                    {" "}
+                    <div
+                      id={`${event.id}`}
+                      data-after-content={`Add ${event.title} to google calendar`}
+                      className="add-to-gc"
+                      onClick={displayButton}
+                    >
+                      +
+                    </div>
+                    <div
+                      ref={(el) => (buttonsRef.current[event.id] = el)}
+                      className="add-to-gc-btn displayed"
+                    >
+                      <a
+                        target="_blank"
+                        href={`https://calendar.google.com/calendar/r/eventedit?text=${encodeURIComponent(
+                          event.title
+                        )}&details=Attend%20the%20event%20for%20${encodeURIComponent(
+                          event.title
+                        )}%20Thanks!&location=TantraFiesta2k21%20IIITN&dates=202110${
+                          event.day
+                        }T${event.startHour}${event.startMinute}00/202110${
+                          event.endDay ? event.endDay : event.day
+                        }T${event.endHour}${event.endMinute}`}
+                      >
+                        <button>Add to Google Calendar</button>
+                      </a>
+                    </div>
+                  </div>
+                ) : (
+                  ""
+                )}
               </div>
             );
           })}

@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="nav-logo">
           <div className="tfSvg">
             <img
-              src="/Assets/images/newLogo.svg"
+              src="/Assets/images/newLogo.png"
               alt="tantrafiesta-logo"
             />
           </div>
