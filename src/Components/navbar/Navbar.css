@@ -34,7 +34,9 @@
 }
 
 .tfSvg img {
-  width: 6.25rem;
+  /* width: 6.25rem; */
+    width: 80px;
+    margin-top: 6px;
 }
 
 .nav-menu {
