@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { ReactComponent as Arrow } from "./assets/arrow.svg";
 import { ReactComponent as Square } from "./assets/square.svg";
 import { ReactComponent as FacebookIcon } from "./assets/social/facebook.svg";
@@ -25,13 +25,13 @@ const Footer = () => {
         <div className="query-follow">
           <div className="query">
             <h2>For Queries Contact</h2>
-            <a href="">
+            <HashLink smooth to="/about#team">
               <p>
                 Event Co-ordinators <Arrow></Arrow>{" "}
               </p>
-            </a>
-            <a href="mailto:tantrahelp@iiitn.ac.in">
-              <p>tantrahelp@iiitn.ac.in</p>
+            </HashLink>
+            <a href="mailto:tantrafiesta@iiitn.ac.in">
+              <p>tantrafiesta@iiitn.ac.in</p>
             </a>
           </div>
           <div className="follow">

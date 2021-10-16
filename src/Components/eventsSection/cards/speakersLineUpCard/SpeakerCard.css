@@ -26,6 +26,7 @@
   width: 60%;
   background: #3a065e;
   padding: 1.5rem;
+  position: relative;
 }
 
 .speaker-card .content .speaker {
@@ -47,15 +48,33 @@
   align-items: center;
   position: absolute;
   bottom: 15px;
-  right: 10px;
+  right: 20px;
 }
 
 .speaker-card .date-time p {
   color: rgba(255, 255, 255, 0.52);
 }
 
-.speaker-card a{
-    text-decoration: none;
+.speaker-card a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1220px) and (max-width: 2000px) {
+  .speaker-card .image img {
+    height: 100%;
+    width: 100%;
+    max-height: 400px;
+  }
+  .speaker-card .content {
+    max-height: 400px;
+  }
+  .speaker-card .date-time{
+  position: absolute;
+  bottom: 20px;
+}
+.speaker-card .btn-para{
+  bottom: 20px;
+}
 }
 
 @media screen and (max-width: 1380px) {

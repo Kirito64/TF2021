@@ -1,13 +1,13 @@
-import React, {useState} from "react";
-import "./Calendar.css"
+import React, { useState } from "react";
+import "./Calendar.css";
 
 import calendarData from "./calendarData";
 import { HashLink } from "react-router-hash-link";
 
 const Calendar = () => {
-
-    const [heading, setHeading] = useState("CALENDAR")
-    const [data, setData] = useState(calendarData)
+  const [heading, setHeading] = useState("CALENDAR");
+  const modifiedCalendarData = calendarData.slice(0, 30);
+  const [data, setData] = useState(calendarData);
 
   const Tags = [
     "calendar",
@@ -19,56 +19,56 @@ const Calendar = () => {
     "workshops",
     "techtalk",
     "sessions",
-    "mainevents"
+    "mainevents",
   ];
 
   let val = calendarData.filter((event) => event.type.includes("techtalk"));
 
   console.log(val[0].type[0].toUpperCase());
 
-  const Sort = (e)=>{
-    e.preventDefault()
+  const Sort = (e) => {
+    e.preventDefault();
     const type = e.target.innerText;
-    console.log(e.target.innerText)
-    setHeading(type.toUpperCase())
+    console.log(e.target.innerText);
+    setHeading(type.toUpperCase());
 
     const sortedData = calendarData.filter((event) =>
       event.type.includes(e.target.innerText)
     );
 
-    if(sortedData.length !== 0){
-        setData(sortedData)
+    if (sortedData.length !== 0) {
+      setData(sortedData);
+    } else {
+      setData(calendarData);
     }
-    else{
-        setData(calendarData)
-    }
-  }
+  };
 
-  const SortStatus = (e)=>{
-    e.preventDefault()
+  const SortStatus = (e) => {
+    e.preventDefault();
     const currentStatus = e.target.className;
 
-    setHeading(e.target.className.toUpperCase())
+    setHeading(e.target.className.toUpperCase());
 
-    console.log(currentStatus)
-    const isLiveData = calendarData.filter((event) =>
-      event.isLive === true
+    console.log(currentStatus);
+    const isLiveData = calendarData.filter((event) => event.isLive === true);
+
+    const isUpcomingData = calendarData.filter(
+      (event) => event.isUpcoming === true
     );
 
-    const isUpcomingData = calendarData.filter((event) => event.isUpcoming === true);
+    const isEndedData = calendarData.filter(
+      (event) => event.isLive === false && event.isUpcoming === false
+    );
 
-    const isEndedData = calendarData.filter((event) => event.isLive === false && event.isUpcoming === false);
-
-    if(e.target.className === "live"){
-        if(isLiveData.length !== 0){
-            setData(isLiveData)
-        }
-        else{
-            setData([])
-            setHeading(
-              `Sorry there are no ${e.target.className.toUpperCase()} events`
-            );
-        }
+    if (e.target.className === "live") {
+      if (isLiveData.length !== 0) {
+        setData(isLiveData);
+      } else {
+        setData([]);
+        setHeading(
+          `Sorry there are no ${e.target.className.toUpperCase()} events`
+        );
+      }
     }
 
     if (e.target.className === "upcoming") {
@@ -92,9 +92,7 @@ const Calendar = () => {
         );
       }
     }
-
-    
-  }
+  };
 
   return (
     <div className="calendar">
@@ -133,6 +131,27 @@ const Calendar = () => {
                 </div>
                 <div className="card-time">
                   <h4>{event.time}</h4>
+                  {event.type.includes("hackofuturista") ? (
+                    <p style={{ color: "#00f7f7", lineHeight: "1.6rem" }}>
+                      HackFuturista
+                    </p>
+                  ) : (
+                    ""
+                  )}
+                  {event.type.includes("designathon") ? (
+                    <p style={{ color: "violet", lineHeight: "1.6rem" }}>
+                      Designathon
+                    </p>
+                  ) : (
+                    ""
+                  )}
+                  {event.type.includes("techtalk") ? (
+                    <p style={{ color: "cyan", lineHeight: "2.2rem" }}>
+                      {event.speaker}
+                    </p>
+                  ) : (
+                    ""
+                  )}
                 </div>
                 <div className="status">
                   <p>
@@ -154,7 +173,7 @@ const Calendar = () => {
         </div>
       </div>
       <div className="back-btn">
-        <HashLink to="/events" smooth >
+        <HashLink to="/events" smooth>
           <span>{`Back <<`}</span>
         </HashLink>
       </div>

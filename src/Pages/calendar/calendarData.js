@@ -19,7 +19,7 @@ export default [
     type: ["gaming", "funcontest"],
     isUpcoming:
       currentDate < "2021-10-16" ||
-      (currentDate === "2021-10-16" && currentTime <= "20:0:0")
+      (currentDate === "2021-10-16" && currentTime <= "13:0:0")
         ? true
         : false,
   },

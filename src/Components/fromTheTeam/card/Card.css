@@ -39,8 +39,8 @@
 }
 
 .card-media img {
-  width: 5.4375rem;
-  height: 5.4375rem;
+  height: 100%;
+  width: 100%;
 }
 
 .card-content {

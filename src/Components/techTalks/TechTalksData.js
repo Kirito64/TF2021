@@ -1,4 +1,7 @@
 import speaker1 from "./assets/speaker1.png";
+import debanikRoyImage from "./assets/debanikRoy.png";
+import pranavLadImage from "./assets/pranavLad.jpg";
+import shantanuShubhamImage from "./assets/shantanuShubham.png"
 
 var today = new Date();
 var date =
@@ -9,7 +12,7 @@ var time =
 export default [
   {
     id: 1,
-    speakerImage: speaker1,
+    speakerImage: debanikRoyImage,
     title: "Robotics and Autonomous Systems",
     speakerName: "Dr. Debanik Roy",
     speakerDesignation:
@@ -25,8 +28,8 @@ export default [
   },
   {
     id: 2,
-    speakerImage: speaker1,
-    title: "Artificial Intelligence and its Applications",
+    speakerImage: pranavLadImage,
+    title: "ML Made Easy",
     speakerName: "Dr. Pranav Lad",
     speakerDesignation: "Product Designer @Cred",
     date: "18th Oct 2021",
@@ -40,7 +43,7 @@ export default [
   },
   {
     id: 3,
-    speakerImage: speaker1,
+    speakerImage: shantanuShubhamImage,
     title: "Emerging Technologies",
     speakerName: "Shantanu Shubham",
     speakerDesignation: "@Coding Ninjas",

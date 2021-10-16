@@ -66,5 +66,6 @@
     width: 85%;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "item1 item1" "item2 item3" "item4 item5" "item6 item7" "item8 item8";
+    gap: 10px;
   }
 }

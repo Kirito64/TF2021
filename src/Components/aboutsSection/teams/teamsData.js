@@ -1,9 +1,11 @@
-import leadImage from "./assets/lead.png"
-import contentLeadImage from "./assets/content.png"
-import marketingLeadImage from "./assets/marketing.png"
-import eventLeadImage from "./assets/event.png"
 import tsImage from "./assets/ts.png"
-import designLeadImage from "./assets/design.png"
+import contentLeadImage from "./assets/contentLead.png"
+import marketingLeadImage from "./assets/marketingLead.png"
+import eventLeadImage from "./assets/eventLead.png"
+import designLeadImage from "./assets/designLead.png"
+import corporateLeadImage from "./assets/corporateLead.png"
+import hospitalytLeadImage from "./assets/hospitalityLead.png"
+import webdLeadImage from "./assets/webdLead.png"
 
 export default [
   {
@@ -11,56 +13,56 @@ export default [
     isLead: true,
     image: tsImage,
     title: "Technical Secretary",
-    name: "John Doe",
-    email: "emaildoftc.iiitn.ac.in",
+    name: "Divyansh Kumar",
+    email: "ts@iiitn.ac.in",
   },
   {
     id: 2,
     image: contentLeadImage,
     title: "Content Team",
-    name: "John Doe",
-    email: "emaildoftc.iiitn.ac.in",
+    name: "Sakshi Pandagale",
+    email: "sakshipandagale@gmail.com",
   },
   {
     id: 3,
-    image: leadImage,
+    image: corporateLeadImage,
     title: "Corporate Relations Team",
-    name: "John Doe",
-    email: "emaildoftc.iiitn.ac.in",
+    name: "Priya Gupta",
+    email: "priyaguptaloha@gmail.com",
   },
   {
     id: 4,
     image: designLeadImage,
     title: "Design Team",
-    name: "John Doe",
-    email: "emaildoftc.iiitn.ac.in",
+    name: "Debrupa Nag",
+    email: "debrupanag3@gmail.com",
   },
   {
     id: 5,
     image: eventLeadImage,
     title: "Event Management Team",
-    name: "John Doe",
-    email: "emaildoftc.iiitn.ac.in",
+    name: "Anushka Chauhan",
+    email: "anushkachauhan1503@gmail.com",
   },
   {
     id: 6,
-    image: leadImage,
+    image: hospitalytLeadImage,
     title: "Hospitality Team",
-    name: "John Doe",
-    email: "emaildoftc.iiitn.ac.in",
+    name: "Varun Das",
+    email: "varun.arundas@gmail.com",
   },
   {
     id: 7,
     image: marketingLeadImage,
     title: "Social Media and Marketing Team",
-    name: "John Doe",
-    email: "emaildoftc.iiitn.ac.in",
+    name: "Pavan Sesha Sai",
+    email: "kpavan3009@gmail.com",
   },
   {
     id: 8,
-    image: leadImage,
+    image: webdLeadImage,
     title: "Web Dev Team",
-    name: "John Doe",
-    email: "emaildoftc.iiitn.ac.in",
+    name: "Jatin Chhangani",
+    email: "jatinchhangani@gmail.com",
   },
 ];

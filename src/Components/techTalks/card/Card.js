@@ -11,7 +11,7 @@ const Card = (props) => {
     return (
       <div className="tech-talk-card">
         <div className="image">
-          <img src={speaker1} alt="" />
+          <img src={speakerImage} alt="" />
             <a href={joinLink} target="_blank" >
               <Button buttonSize="btn-join-now-size" buttonStyle="btn-normal">
                 Join Here

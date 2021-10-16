@@ -9,7 +9,7 @@ const Teams = () => {
   return (
     <div className="teams-container">
       <div className="header">
-        <h1>The Team</h1>
+        <h1 id="team" >The Team</h1>
       </div>
       <Spring 
         from={{width:"0%", opacity: 0}}

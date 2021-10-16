@@ -9,8 +9,8 @@ const LeadCard = (props) => {
     return (
       <div className="lead-card">
         <div className="lead-image">
-          <img src={image} alt="leadImage" />
-          <Polygon></Polygon>
+          <img src={image} alt={name} />
+          <div className="glow"></div>
         </div>
         <div className="lead-details">
           <h2>{title}</h2>

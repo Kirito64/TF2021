@@ -10,7 +10,7 @@ const SpeakerCard = (props) => {
     return (
       <div data-aos={animation} className="speaker-card">
         <div className="image">
-          <img src={img} alt={speakerName} />
+          <img src={speakerImage} alt={speakerName} />
         </div>
         <div className="content">
           <div className="speaker">
@@ -25,7 +25,7 @@ const SpeakerCard = (props) => {
         </div>
         <div></div>
         <div className="btn-para">
-          <a href={joinLink}>
+          <a href={joinLink} target="_blank" >
             <Button buttonStyle="btn-normal" buttonSize="btn-join-now-size">
               Register
             </Button>

@@ -1,9 +1,19 @@
 import img from "./assets/speaker1.png";
+import debanikRoyImage from "../../techTalks/assets/debanikRoy.png";
+import jaideepPrasadImage from "../../techTalks/assets/jaideepPrasad.png";
+import pranavLadImage from "../../techTalks/assets/pranavLad.jpg";
+import shantanuShubhamImage from "../../techTalks/assets/shantanuShubham.png";
+import pulkitSinghImage from "../../techTalks/assets/pulkitSingh.png";
+import praveenKumarImage from "../../techTalks/assets/praveenKumar.jpg";
+import vivekUmapathiImage from "../../techTalks/assets/vivekUmapathi.png";
+import ankitTripathiImage from "../../techTalks/assets/ankitTripathi.png";
+import umeshThotaImage from "../../techTalks/assets/umeshThota.png";
+import harishUthayamkumarImage from "../../techTalks/assets/harishUthayamkumar.png";
 
 export default [
   {
     id: 1,
-    speakerImage: img,
+    speakerImage: debanikRoyImage,
     speakerName: "Dr. Debanik Roy",
     speakerDesignation:
       "Scientist, Division of Remote Handling & Robotics, BARC",
@@ -27,7 +37,7 @@ export default [
   },
   {
     id: 2,
-    speakerImage: img,
+    speakerImage: jaideepPrasadImage,
     speakerName: "Jaideep Prasad",
     speakerDesignation: "Mentro CEO, Associate Sponsor",
     speakerDetails: (
@@ -53,7 +63,7 @@ export default [
   },
   {
     id: 3,
-    speakerImage: img,
+    speakerImage: pranavLadImage,
     speakerName: "Dr. Pranav Lad",
     speakerDesignation: "Product Designer @Cred",
     speakerDetails: (
@@ -80,7 +90,7 @@ export default [
   },
   {
     id: 4,
-    speakerImage: img,
+    speakerImage: shantanuShubhamImage,
     speakerName: "Shantanu Shubham",
     speakerDesignation: "Coding Ninjas, Event Sponsor, Hack-o-Futurista",
     speakerDetails: (
@@ -100,7 +110,7 @@ export default [
   },
   {
     id: 5,
-    speakerImage: img,
+    speakerImage: pulkitSinghImage,
     speakerName: "Mr. Pulkit Singh",
     speakerDesignation: "Made-easy, the Associate sponsor",
     speakerDetails: (
@@ -126,7 +136,7 @@ export default [
   },
   {
     id: 6,
-    speakerImage: img,
+    speakerImage: praveenKumarImage,
     speakerName: "Mr. Praveen Kumar",
     speakerDesignation: "Full Stack Developer, Hack-o-Futurista Judge",
     speakerDetails: (
@@ -144,11 +154,12 @@ export default [
     date: "22nd Oct 2021",
     time: "6 pm IST",
     animation: "zoom-in-up",
-    joinLink: "",
+    joinLink:
+      "https://dare2compete.com/workshop/open-source-as-a-career-session-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-225601?lb=ujF9daB",
   },
   {
     id: 7,
-    speakerImage: img,
+    speakerImage: vivekUmapathiImage,
     speakerName: "Mr. Vivek Umapathi",
     speakerDesignation: "Vision Engineer, ZENUITY",
     speakerDetails: (
@@ -174,7 +185,7 @@ export default [
   },
   {
     id: 8,
-    speakerImage: img,
+    speakerImage: ankitTripathiImage,
     speakerName: "Mr. Ankit Tripathi",
     speakerDesignation: "Founder- Uneako, Open Speaker",
     speakerDetails: (
@@ -194,11 +205,12 @@ export default [
     date: "24th Oct 2021",
     time: "10 am IST",
     animation: "zoom-in-up",
-    joinLink: "",
+    joinLink:
+      "https://dare2compete.com/workshop/countdown-to-a-better-climate-session-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-225540?lb=ujF9daB",
   },
   {
     id: 9,
-    speakerImage: img,
+    speakerImage: umeshThotaImage,
     speakerName: "Mr. Umesh Thota",
     speakerDesignation: "CEO, Authbase Pvt Ltd",
     speakerDetails: (
@@ -222,7 +234,7 @@ export default [
   },
   {
     id: 10,
-    speakerImage: img,
+    speakerImage: harishUthayamkumarImage,
     speakerName: "Harish Uthayamkumar",
     speakerDesignation: "Co-Founder at BlueLearn.in",
     speakerDetails: (
@@ -235,7 +247,8 @@ export default [
         related to college , freelancing and other knowledgeable content. He is
         also connected with Helpage India which is a leading charity platform in
         India working with and for disadvantaged elderly and has become the
-        representative voice for India’s elderly. He will be speaking on “<b>Freelancing and Time Management in College</b>”.
+        representative voice for India’s elderly. He will be speaking on “
+        <b>Freelancing and Time Management in College</b>”.
       </p>
     ),
     isLive: false,
