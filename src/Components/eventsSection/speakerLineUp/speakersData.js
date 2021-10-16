@@ -65,7 +65,7 @@ export default [
     id: 3,
     speakerImage: pranavLadImage,
     speakerName: "Dr. Pranav Lad",
-    speakerDesignation: "Product Designer @Cred",
+    speakerDesignation: "Engineer @MathWorks",
     speakerDetails: (
       <p>
         Dr. Pranav Lad is a Customer Success Engineer at MathWorks, based out of

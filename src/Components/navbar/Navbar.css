@@ -34,7 +34,9 @@
 }
 
 .tfSvg img {
-  width: 6.25rem;
+  /* width: 6.25rem; */
+    width: 80px;
+    margin-top: 5px;
 }
 
 .nav-menu {
@@ -100,7 +102,7 @@ Responsiveness
     font-weight: lighter;
   }
   .tfSvg img {
-    width: 5rem;
+    width: 70px;
   }
   .nav-menu {
     position: fixed;
