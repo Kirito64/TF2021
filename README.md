@@ -12,7 +12,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/Kirito64/TF2021">
-    <img src="https://raw.githubusercontent.com/bhavesh-chaudhari/Learning-Material/main/tf-github-circle.png?token=AR4AVBB6PEOYL73TMNCX33LBM7K64" alt="Logo" width="100" height="100">
+    <img src="https://raw.githubusercontent.com/bhavesh-chaudhari/Healthify/main/images/tf-github-circle.png" alt="Logo" width="100" height="100">
   </a>
 
   <h3 align="center">Tantra Fiesta</h3>
@@ -20,7 +20,7 @@
   <p align="center">
     The Technical Fest Of IIITN
     <br />
-    <a href="https://github.com/Kirito64/TF2021"><strong>Visit Website »</strong></a>
+    <a href="https://tantrafiesta2k21.web.app/"><strong>Visit Website »</strong></a>
   </p>
 </div>
 
