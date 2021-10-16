@@ -111,7 +111,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="platform-sponsor">
-            <h2>Platporm Sponsor</h2>
+            <h2>Platform Sponsor</h2>
             <div className="square">
               <a href="https://dare2compete.com/" target="_blank">
                 <img src={Dtoc} alt="GFG" />

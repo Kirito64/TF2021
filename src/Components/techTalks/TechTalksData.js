@@ -31,7 +31,7 @@ export default [
     speakerImage: pranavLadImage,
     title: "ML Made Easy",
     speakerName: "Dr. Pranav Lad",
-    speakerDesignation: "Product Designer @Cred",
+    speakerDesignation: "Engineer @MathWorks",
     date: "18th Oct 2021",
     time: "2:30 pm IST",
     hasButton:
