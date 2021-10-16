@@ -68,39 +68,6 @@ const Footer = () => {
             <p>Connect with us here</p>
           </div>
         </div>
-        <div className="sponsors1">
-          <div className="event-sponsors">
-            <h2>Event Sponsors</h2>
-            <div className="square">
-              <a href="https://in.mathworks.com/" target="_blank">
-                <img src={MathWorks} alt="D2C" />
-              </a>
-              <a href="https://www.codingninjas.com/" target="_blank">
-                <img src={CodingNinjas} alt="D2C" />
-              </a>
-              <a href="https://www.prepbytes.com/" target="_blank">
-                <img src={PrepBytes} alt="D2C" />
-              </a>
-              <a href="https://www.bluelearn.in/" target="_blank">
-                <img src={BlueLearn} alt="D2C" />
-              </a>
-            </div>
-          </div>
-          <div className="associate-sponsors">
-            <h2>Associate Sponsors</h2>
-            <div className="square">
-              <a href="https://www.geeksforgeeks.org/" target="_blank">
-                <img src={Gfg} alt="GFG" />
-              </a>
-              <a href="https://mentro.tech/" target="_blank">
-                <img src={Mentro} alt="Mentro" />
-              </a>
-              <a href="https://www.madeeasy.in/" target="_blank">
-                <img src={MadeEasy} alt="MadeEasy" />
-              </a>
-            </div>
-          </div>
-        </div>
         <div className="sponsors2">
           <div className="title-sponsor">
             <h2>Title Sponsor</h2>
@@ -115,6 +82,39 @@ const Footer = () => {
             <div className="square">
               <a href="https://dare2compete.com/" target="_blank">
                 <img src={Dtoc} alt="GFG" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="sponsors1">
+          <div className="associate-sponsors">
+            <h2>Associate Sponsors</h2>
+            <div className="square">
+              <a href="https://www.geeksforgeeks.org/" target="_blank">
+                <img src={Gfg} alt="GFG" />
+              </a>
+              <a href="https://mentro.tech/" target="_blank">
+                <img src={Mentro} alt="Mentro" />
+              </a>
+              <a href="https://www.madeeasy.in/" target="_blank">
+                <img src={MadeEasy} alt="MadeEasy" />
+              </a>
+            </div>
+          </div>
+          <div className="event-sponsors">
+            <h2>Event Sponsors</h2>
+            <div className="square">
+              <a href="https://in.mathworks.com/" target="_blank">
+                <img src={MathWorks} alt="D2C" />
+              </a>
+              <a href="https://www.codingninjas.com/" target="_blank">
+                <img src={CodingNinjas} alt="D2C" />
+              </a>
+              <a href="https://www.prepbytes.com/" target="_blank">
+                <img src={PrepBytes} alt="D2C" />
+              </a>
+              <a href="https://www.bluelearn.in/" target="_blank">
+                <img src={BlueLearn} alt="D2C" />
               </a>
             </div>
           </div>
