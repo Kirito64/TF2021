@@ -9,6 +9,7 @@ import vivekUmapathiImage from "../../techTalks/assets/vivekUmapathi.png";
 import ankitTripathiImage from "../../techTalks/assets/ankitTripathi.png";
 import umeshThotaImage from "../../techTalks/assets/umeshThota.png";
 import harishUthayamkumarImage from "../../techTalks/assets/harishUthayamkumar.png";
+import vinitMankarImage from "../../techTalks/assets/vinitMankar.png";
 
 export default [
   {
@@ -62,6 +63,29 @@ export default [
       "https://dare2compete.com/workshop/how-to-prepare-for-your-next-big-internship-or-job-on-or-off-campus-session-tantrafiesta-2021-indian-institute--224779",
   },
   {
+    id: 11,
+    speakerImage: vinitMankarImage,
+    speakerName: "Vinit Mankar",
+    speakerDesignation: "Product Designer",
+    speakerDetails: (
+      <p>
+        I have a sweet spot for hackathons. There’s a different high in staying
+        up for 36 hours straight and building things that would/wouldn’t work”
+        says our competetive and driven speaker Vinit Mankar. In this session,
+        Vinit, a product designer, will talk about design culture in engineering
+        colleges, ways to optimise time and resources in design hackathons, and
+        much more! Join us for this talk on “
+        <b>How to stand out in Design Hackathons</b>”.
+      </p>
+    ),
+    isLive: false,
+    date: "17th Oct 2021",
+    time: "7 pm IST",
+    animation: "fade-up",
+    joinLink:
+      "https://dare2compete.com/p/freelancing-and-time-management-in-college-session-duplicate-tantrafiesta-2021-indian-institute-of-information-technol-226080?lb=ujF9daB",
+  },
+  {
     id: 3,
     speakerImage: pranavLadImage,
     speakerName: "Dr. Pranav Lad",
@@ -84,7 +108,7 @@ export default [
     isLive: false,
     date: "18th Oct 2021",
     time: "2:30 pm IST",
-    animation: "fade-up",
+    animation: "zoom-in-up",
     joinLink:
       "https://dare2compete.com/workshop/ml-made-easy-using-matlab-workshop-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-224748",
   },
@@ -105,7 +129,7 @@ export default [
     isLive: false,
     date: "19th Oct 2021",
     time: "6 pm IST",
-    animation: "zoom-in-up",
+    animation: "fade-up",
     joinLink: "https://bit.ly/3AwK4KY",
   },
   {
@@ -130,7 +154,7 @@ export default [
     isLive: false,
     date: "20th Oct 2021",
     time: "6 pm IST",
-    animation: "fade-up",
+    animation: "zoom-in-up",
     joinLink:
       "https://dare2compete.com/workshop/a-mindmap-for-competitive-exam-session-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-225129",
   },
@@ -153,7 +177,7 @@ export default [
     isLive: false,
     date: "22nd Oct 2021",
     time: "6 pm IST",
-    animation: "zoom-in-up",
+    animation: "fade-up",
     joinLink:
       "https://dare2compete.com/workshop/open-source-as-a-career-session-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-225601?lb=ujF9daB",
   },
@@ -179,7 +203,7 @@ export default [
     isLive: false,
     date: "23rd Oct 2021",
     time: "12 pm IST",
-    animation: "fade-up",
+    animation: "zoom-in-up",
     joinLink:
       "https://dare2compete.com/workshop/future-of-transportation-workshop-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-224276",
   },
@@ -204,7 +228,7 @@ export default [
     isLive: false,
     date: "24th Oct 2021",
     time: "10 am IST",
-    animation: "zoom-in-up",
+    animation: "fade-up",
     joinLink:
       "https://dare2compete.com/workshop/countdown-to-a-better-climate-session-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-225540?lb=ujF9daB",
   },
@@ -229,7 +253,7 @@ export default [
     isLive: false,
     date: "24 Oct 2021",
     time: "3 pm IST",
-    animation: "fade-up",
+    animation: "zoom-in-up",
     joinLink: "https://dare2compete.com/o/uZtbFQy?lb=7qZJDuw",
   },
   {
@@ -254,7 +278,7 @@ export default [
     isLive: false,
     date: "24th Oct 2021",
     time: "5 pm IST",
-    animation: "zoom-in-up",
+    animation: "fade-up",
     joinLink: "https://dare2compete.com/o/7N5rf0X?lb=7qZJDuw",
   },
 ];

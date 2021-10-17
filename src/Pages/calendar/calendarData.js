@@ -199,6 +199,30 @@ export default [
         : false,
   },
   {
+    id: 41,
+    title: "Tech Talk",
+    speaker: "Vinit Mankar",
+    date: "17th Oct, 2021",
+    time: "07:00pm to 08:00pm",
+    day: "17",
+    startHour: "18",
+    startMinute: "59",
+    endHour: "19",
+    endMinute: "59",
+    isLive:
+      currentDate === "2021-10-17" &&
+      currentTime >= "18:0:0" &&
+      currentTime <= "19:0:0"
+        ? true
+        : false,
+    type: ["techtalk"],
+    isUpcoming:
+      currentDate < "2021-10-17" ||
+      (currentDate === "2021-10-17" && currentTime <= "18:0:0")
+        ? true
+        : false,
+  },
+  {
     id: 10,
     title: "Strokes Session",
     status: "tentative",
@@ -647,7 +671,7 @@ export default [
   },
   {
     id: 29,
-    title: "Tech Talk",
+    title: "Orator Talk",
     speaker: "Harish Uthayamkumar",
     date: "24th Oct, 2021",
     time: "05:00pm to 06:00pm",

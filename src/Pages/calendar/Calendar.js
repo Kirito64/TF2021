@@ -122,7 +122,7 @@ const Calendar = () => {
   const buttonsRef = useRef([]);
 
   useEffect(() => {
-    buttonsRef.current = buttonsRef.current.slice(0, calendarData.length);
+    buttonsRef.current = buttonsRef.current.slice(0, calendarData.length + 1);
   }, [calendarData]);
 
   const displayButton = (e) => {
@@ -257,20 +257,12 @@ const Calendar = () => {
                 <div className="number">
                   <p>{event.id}</p>
                 </div>
-                {!(
+                {(
                   checkIsUpcoming(
                     event.day,
                     event.startHour,
                     event.startMinute
-                  ) === false &&
-                  checkIsLive(
-                    event.day,
-                    event.endDay ? event.endaDay : event.day,
-                    event.startHour,
-                    event.startMinute,
-                    event.endHour,
-                    event.endMinute
-                  ) === false
+                  ) === true
                 ) ? (
                   <div>
                     {" "}
