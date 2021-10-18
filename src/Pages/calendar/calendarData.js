@@ -743,12 +743,12 @@ export default [
     id: 32,
     title: "Submission of Round 1",
     date: "18th Oct, 2021",
-    time: "12:00 PM",
+    time: "11:59 PM",
     day: "16",
     startHour: "11",
     startMinute: "59",
     endDay: "18",
-    endHour: "11",
+    endHour: "23",
     endMinute: "59",
     isLive:
       currentDate === "2021-10-18" &&
@@ -856,12 +856,12 @@ export default [
     id: 37,
     title: "Submission of Round 1",
     date: "18th Oct, 2021",
-    time: "12 PM",
+    time: "11:59 PM",
     day: "16",
     startHour: "11",
     startMinute: "59",
     endDay: "18",
-    endHour: "11",
+    endHour: "23",
     endMinute: "59",
     isLive:
       currentDate === "2021-10-18" &&

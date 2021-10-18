@@ -49,6 +49,8 @@
   position: absolute;
   bottom: 15px;
   right: 20px;
+  opacity: 1;
+  transition: all 1s ease;
 }
 
 .speaker-card .date-time p {
@@ -68,13 +70,13 @@
   .speaker-card .content {
     max-height: 400px;
   }
-  .speaker-card .date-time{
-  position: absolute;
-  bottom: 20px;
-}
-.speaker-card .btn-para{
-  bottom: 20px;
-}
+  .speaker-card .date-time {
+    position: absolute;
+    bottom: 20px;
+  }
+  .speaker-card .btn-para {
+    bottom: 20px;
+  }
 }
 
 @media screen and (max-width: 1380px) {
@@ -121,6 +123,68 @@
     opacity: 0.9;
     max-height: 31px;
     max-width: 80px;
+  }
+}
+
+.speaker-card .mobile-read-more {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .speaker-card{
+    min-height: 540px;
+    max-height: 540px;
+  }
+  .speaker-card .image{
+    max-height: 200px;
+    height: 200px;
+    transition: all 1s ease;
+  }
+  .speaker-card .content .speaker-details p {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    min-height: 120px;
+    transition: all 1s ease;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    transition: all 2s ease;
+    scroll-behavior: smooth;
+  }
+  .speaker-card .mobile-read-more {
+    display: block;
+    position: absolute;
+    right: 10px;
+    bottom: 32px;
+  }
+  .speaker-card .content .speaker-details{
+    max-height: 260px;
+    transition: all 1s ease;
+  }
+  .speaker-card .mobile-read-more button{
+    padding: 4px;
+    border: none;
+    background: black;
+    opacity: 0.8;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .speaker-card.is-reading-more .content .speaker-details p{
+    -webkit-line-clamp: none;
+    overflow: auto;
+    transition: all 1s ease;
+    max-height: 340px;
+  } 
+  .speaker-card .content .date-time{
+    position: absolute;
+    bottom: 20px;
+  }
+  .speaker-card.is-reading-more .image{
+    height: 0%;
+    transition: all 1s ease;
+  }
+  .speaker-card.is-reading-more .btn-para{
+    opacity: 0;
   }
 }
 

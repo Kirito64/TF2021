@@ -17,7 +17,7 @@
   font-size: 2.5rem;
 }
 
-.teams-container > div:nth-child(2){
+.teams-container > div:nth-child(2) {
   display: flex;
   justify-content: center;
 }
@@ -31,7 +31,7 @@
   grid-auto-rows: minmax(150px, auto);
   gap: 20px;
   row-gap: 30px;
-  grid-template-areas: "item1 item1 item1" "item2 item3 item4" "item5 item6 item7" "item8 item8 item8";
+  grid-template-areas: "item1 item1 item1" "item2 item3 item4" "item5 item6 item7" "item8 item11 item9";
 }
 
 .team-grid > div:nth-child(1) {
@@ -59,13 +59,28 @@
 
 .team-grid > div:nth-child(8) {
   grid-area: item8;
+  width: 100%;
+  margin-left: 50%;
+}
+
+.team-grid > div:nth-child(9) {
+  width: 100%;
+  grid-area: item9;
+  margin-left: -50%;
 }
 
 @media screen and (max-width: 600px) {
   .team-grid {
     width: 85%;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "item1 item1" "item2 item3" "item4 item5" "item6 item7" "item8 item8";
+    grid-template-areas: "item1 item1" "item2 item3" "item4 item5" "item6 item7" "item8 item9";
     gap: 10px;
+  }
+  .team-grid > div:nth-child(8) {
+    margin-left: 0;
+  }
+
+  .team-grid > div:nth-child(9) {
+    margin-left: 0;
   }
 }

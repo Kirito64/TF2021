@@ -255,7 +255,7 @@ const Calendar = () => {
                   </p>
                 </div>
                 <div className="number">
-                  <p>{event.id}</p>
+                  <p>{index + 1}</p>
                 </div>
                 {(
                   checkIsUpcoming(
