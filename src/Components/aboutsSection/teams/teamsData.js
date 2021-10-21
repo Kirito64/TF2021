@@ -6,6 +6,7 @@ import designLeadImage from "./assets/designLead.png"
 import corporateLeadImage from "./assets/corporateLead.png"
 import hospitalytLeadImage from "./assets/hospitalityLead.png"
 import webdLeadImage from "./assets/webdLead.png"
+import videoLeadImage from "./assets/videoLead.png"
 
 export default [
   {
@@ -60,6 +61,13 @@ export default [
   },
   {
     id: 8,
+    image: videoLeadImage,
+    title: "Video Making Team",
+    name: "Kartik Barmaiya",
+    email: "kartik.barmaiya28@gmail.com",
+  },
+  {
+    id: 9,
     image: webdLeadImage,
     title: "Web Dev Team",
     name: "Jatin Chhangani",

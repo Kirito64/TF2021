@@ -122,7 +122,7 @@ const Calendar = () => {
   const buttonsRef = useRef([]);
 
   useEffect(() => {
-    buttonsRef.current = buttonsRef.current.slice(0, calendarData.length);
+    buttonsRef.current = buttonsRef.current.slice(0, calendarData.length + 1);
   }, [calendarData]);
 
   const displayButton = (e) => {
@@ -255,22 +255,14 @@ const Calendar = () => {
                   </p>
                 </div>
                 <div className="number">
-                  <p>{event.id}</p>
+                  <p>{index + 1}</p>
                 </div>
-                {!(
+                {(
                   checkIsUpcoming(
                     event.day,
                     event.startHour,
                     event.startMinute
-                  ) === false &&
-                  checkIsLive(
-                    event.day,
-                    event.endDay ? event.endaDay : event.day,
-                    event.startHour,
-                    event.startMinute,
-                    event.endHour,
-                    event.endMinute
-                  ) === false
+                  ) === true
                 ) ? (
                   <div>
                     {" "}
@@ -292,7 +284,7 @@ const Calendar = () => {
                           event.title
                         )}&details=Attend%20the%20event%20for%20${encodeURIComponent(
                           event.title
-                        )}%20Thanks!&location=TantraFiesta2k21%20IIITN&dates=202110${
+                        )}%20${event.type.includes("techtalk") ? "by" : ""}%20${event.speaker ? event.speaker : "hosted by Tantrafiesta 2k21"}%2C%20Thanks!&location=TantraFiesta2k21%20IIITN&dates=202110${
                           event.day
                         }T${event.startHour}${event.startMinute}00/202110${
                           event.endDay ? event.endDay : event.day
