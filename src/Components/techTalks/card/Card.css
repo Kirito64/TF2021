@@ -11,6 +11,10 @@
   color: #ffffff;
 }
 
+.tech-talk-card a{
+  text-decoration: none;
+}
+
 .tech-talk-card .image {
   height: 50%;
   position: relative;
@@ -72,7 +76,6 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-weight: 400;
-  cursor: pointer;
 }
 
 .tech-talk-card .content .date-time {

@@ -11,7 +11,7 @@ export default [
     id: 1,
     title: "BGMI Round 1",
     date: "16th Oct, 2021, 2021",
-    time: "12:00pm to 01:00pm",
+    time: "12:00pm to 04:00pm",
     isLive:
       currentDate === "2021-10-16" &&
       currentTime >= "12:0:0" &&
@@ -30,7 +30,7 @@ export default [
     id: 2,
     title: "Valorant Game Round 1",
     date: "16th Oct, 2021",
-    time: "04:00pm to 06:00pm",
+    time: "04:00pm to 07:00pm",
     isLive:
       currentDate === "2021-10-16" &&
       currentTime >= "16:0:0" &&
@@ -85,7 +85,7 @@ export default [
     id: 5,
     title: "Chess Round 1",
     date: "17th Oct, 2021",
-    time: "10:00am to 12:00pm",
+    time: "10:00am to 11:00pm",
     day: "17",
     startHour: "09",
     startMinute: "59",
@@ -199,32 +199,9 @@ export default [
         : false,
   },
   {
-    id: 41,
-    title: "Tech Talk",
-    speaker: "Vinit Mankar",
-    date: "17th Oct, 2021",
-    time: "07:00pm to 08:00pm",
-    day: "17",
-    startHour: "18",
-    startMinute: "59",
-    endHour: "19",
-    endMinute: "59",
-    isLive:
-      currentDate === "2021-10-17" &&
-      currentTime >= "18:0:0" &&
-      currentTime <= "19:0:0"
-        ? true
-        : false,
-    type: ["techtalk"],
-    isUpcoming:
-      currentDate < "2021-10-17" ||
-      (currentDate === "2021-10-17" && currentTime <= "18:0:0")
-        ? true
-        : false,
-  },
-  {
     id: 10,
     title: "Strokes Session",
+    speaker: "Vinit Mankar",
     status: "tentative",
     date: "17th Oct, 2021",
     time: "07:00pm to 08:00pm",
@@ -286,7 +263,7 @@ export default [
       currentTime <= "16:30:0"
         ? true
         : false,
-    type: ["workshops", "techtalk"],
+    type: ["techtalk"],
     isUpcoming:
       currentDate < "2021-10-18" ||
       (currentDate === "2021-10-18" && currentTime <= "14:30:0")
@@ -297,11 +274,11 @@ export default [
     id: 13,
     title: "BGMI Finals",
     date: "18th Oct, 2021",
-    time: "05:00pm to 06:00pm",
+    time: "06:00pm to 07:00pm",
     day: "18",
-    startHour: "16",
+    startHour: "17",
     startMinute: "59",
-    endHour: "17",
+    endHour: "18",
     endMinute: "59",
     isLive:
       currentDate === "2021-10-18" &&
@@ -320,9 +297,9 @@ export default [
     id: 14,
     title: "Valo Finals",
     date: "18th Oct, 2021",
-    time: "08:00pm to 09:00pm",
+    time: "07:00pm to 09:00pm",
     day: "18",
-    startHour: "19",
+    startHour: "18",
     startMinute: "59",
     endHour: "20",
     endMinute: "59",
@@ -344,11 +321,11 @@ export default [
     title: "Tech Talk",
     speaker: "Shubham Shantanu",
     date: "19th Oct, 2021",
-    time: "05:00pm to 06:00pm",
+    time: "06:00pm to 07:00pm",
     day: "19",
-    startHour: "16",
+    startHour: "17",
     startMinute: "59",
-    endHour: "17",
+    endHour: "18",
     endMinute: "59",
     isLive:
       currentDate === "2021-10-19" &&
@@ -368,11 +345,11 @@ export default [
     title: "Tech Talk",
     speaker: "Mr Pulkit Singh",
     date: "20th Oct, 2021",
-    time: "05:00pm to 06:00pm",
+    time: "06:00pm to 07:00pm",
     day: "20",
-    startHour: "16",
+    startHour: "17",
     startMinute: "59",
-    endHour: "17",
+    endHour: "18",
     endMinute: "59",
     isLive:
       currentDate === "2021-10-20" &&
@@ -390,13 +367,14 @@ export default [
   {
     id: 17,
     title: "Skill-Lync Session",
+    speaker: "Mr. Suryanarayan Paneerselvam",
     status: "tentative",
     date: "21st Oct, 2021",
-    time: "05:00pm to 06:00pm",
+    time: "06:00pm to 07:00pm",
     day: "21",
-    startHour: "16",
+    startHour: "17",
     startMinute: "59",
-    endHour: "17",
+    endHour: "18",
     endMinute: "59",
     isLive:
       currentDate === "2021-10-21" &&
@@ -416,11 +394,11 @@ export default [
     title: "Tech Talk",
     speaker: "Praveen Kumar",
     date: "22nd Oct, 2021",
-    time: "05:00pm to 06:00pm",
+    time: "06:00pm to 07:00pm",
     day: "22",
-    startHour: "16",
+    startHour: "17",
     startMinute: "59",
-    endHour: "17",
+    endHour: "18",
     endMinute: "59",
     isLive:
       currentDate === "2021-10-22" &&
@@ -463,11 +441,11 @@ export default [
     title: "Tech Talk",
     speaker: "Mr. Vivek Umapathi",
     date: "23rd Oct, 2021",
-    time: "12:00pm to 01:00pm",
+    time: "12:00pm to 02:00pm",
     day: "23",
     startHour: "11",
     startMinute: "59",
-    endHour: "12",
+    endHour: "13",
     endMinute: "59",
     isLive:
       currentDate === "2021-10-23" &&
@@ -475,22 +453,23 @@ export default [
       currentTime <= "13:0:0"
         ? true
         : false,
-    type: ["mainevents", "techtalk", "sessions"],
+    type: ["mainevents", "techtalk", "sessions", "workshops"],
     isUpcoming:
       currentDate < "2021-10-23" ||
       (currentDate === "2021-10-23" && currentTime <= "12:0:0")
         ? true
         : false,
   },
+  
   {
     id: 21,
     title: "Tech GK Quiz",
     date: "23rd Oct, 2021",
-    time: "01:00pm to 02:00pm",
+    time: "02:00pm to 03:00pm",
     day: "23",
-    startHour: "12",
+    startHour: "13",
     startMinute: "59",
-    endHour: "13",
+    endHour: "14",
     endMinute: "59",
     isLive:
       currentDate === "2021-10-23" &&
@@ -509,11 +488,11 @@ export default [
     id: 22,
     title: "Chess Finals",
     date: "23rd Oct, 2021",
-    time: "02:00pm to 03:00pm",
+    time: "03:00pm to 04:00pm",
     day: "23",
-    startHour: "13",
+    startHour: "14",
     startMinute: "59",
-    endHour: "14",
+    endHour: "15",
     endMinute: "59",
     isLive:
       currentDate === "2021-10-23" &&
@@ -532,11 +511,11 @@ export default [
     id: 23,
     title: "Web Series Quiz",
     date: "23rd Oct, 2021",
-    time: "03:00pm to 04:00pm",
+    time: "04:00pm to 05:00pm",
     day: "23",
-    startHour: "14",
+    startHour: "15",
     startMinute: "59",
-    endHour: "15",
+    endHour: "16",
     endMinute: "59",
     isLive:
       currentDate === "2021-10-23" &&
@@ -555,9 +534,9 @@ export default [
     id: 24,
     title: "Panel Talk",
     date: "23rd Oct, 2021",
-    time: "04:00pm to 07:00pm",
+    time: "05:00pm to 07:00pm",
     day: "23",
-    startHour: "15",
+    startHour: "16",
     startMinute: "59",
     endHour: "18",
     endMinute: "59",
@@ -579,11 +558,11 @@ export default [
     title: "Tech Talk",
     speaker: "Sathish Rajamani",
     date: "23rd Oct, 2021",
-    time: "07:00pm to 08:00pm",
+    time: "08:00pm to 10:00pm",
     day: "23",
-    startHour: "18",
+    startHour: "19",
     startMinute: "59",
-    endHour: "19",
+    endHour: "21",
     endMinute: "59",
     isLive:
       currentDate === "2021-10-23" &&
@@ -601,8 +580,9 @@ export default [
   {
     id: 26,
     title: "Climate Change",
+    speaker: "Mr. Ankit Tripathi",
     date: "24th Oct, 2021",
-    time: "10:00am to 11:00pm",
+    time: "10:00am to 11:00am",
     day: "24",
     startHour: "09",
     startMinute: "59",
@@ -614,7 +594,7 @@ export default [
       currentTime <= "11:0:0"
         ? true
         : false,
-    type: ["mainevents", "sessions"],
+    type: ["mainevents", "sessions", "techtalk"],
     isUpcoming:
       currentDate < "2021-10-24" ||
       (currentDate === "2021-10-24" && currentTime <= "10:0:0")
@@ -624,6 +604,7 @@ export default [
   {
     id: 27,
     title: "AR-VR session",
+    speaker: "Mr. Ajay Ponna Venkatesh",
     status: "tentative",
     date: "24th Oct, 2021",
     time: "11:00am to 01:00pm",
@@ -638,7 +619,7 @@ export default [
       currentTime <= "13:0:0"
         ? true
         : false,
-    type: ["mainevents", "sessions"],
+    type: ["mainevents", "sessions", "techtalk", "workshops"],
     isUpcoming:
       currentDate < "2021-10-24" ||
       (currentDate === "2021-10-24" && currentTime <= "11:0:0")
@@ -686,7 +667,7 @@ export default [
       currentTime <= "18:0:0"
         ? true
         : false,
-    type: ["mainevents", "techtalk"],
+    type: ["mainevents", "techtalk", "workshops"],
     isUpcoming:
       currentDate < "2021-10-24" ||
       (currentDate === "2021-10-24" && currentTime <= "17:0:0")

@@ -5,7 +5,7 @@ import Button from '../../../button/Button';
 const SpeakerCard = (props) => {
 
     const [readMore, setReadMore] = useState(true)
-    const {speakerImage, speakerName, speakerDesignation, speakerDetails, isLive, date, time, animation, joinLink} = props;
+    const {speakerImage, speakerName, speakerDesignation, speakerDetails, isLive, date, time, animation, joinLink, additionalId} = props;
 
     const card = useRef(null);
     const details = useRef(null);
@@ -24,7 +24,7 @@ const SpeakerCard = (props) => {
   }
 
     return (
-      <div ref={card} data-aos={animation} className="speaker-card">
+      <div ref={card} data-aos={animation} id={additionalId} className="speaker-card">
         <div className="image">
           <img src={speakerImage} alt={speakerName} />
         </div>

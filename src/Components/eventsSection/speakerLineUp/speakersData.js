@@ -10,6 +10,10 @@ import ankitTripathiImage from "../../techTalks/assets/ankitTripathi.png";
 import umeshThotaImage from "../../techTalks/assets/umeshThota.png";
 import harishUthayamkumarImage from "../../techTalks/assets/harishUthayamkumar.png";
 import vinitMankarImage from "../../techTalks/assets/vinitMankar.png";
+import suryanarayanPaneerselvamImage from "../../techTalks/assets/suryanarayanPaneerselvam.png";
+import satishRajamaniImage from "../../techTalks/assets/satishRajamani.jpg";
+import apvImage from "../../techTalks/assets/apv.jpg";
+
 
 export default [
   {
@@ -18,8 +22,9 @@ export default [
     speakerName: "Dr. Debanik Roy",
     speakerDesignation:
       "Scientist, Division of Remote Handling & Robotics, BARC",
+    additionalId: "debanikRoy",
     speakerDetails: (
-      <p>
+      <p id="debanikRoy">
         Dr. Debanik Roy has been associated with the Department of Atomic Energy
         (DAE), Govt. of India. He was with the Robotics division of Bhabha
         Atomic Research Centre (BARC), Mumbai from 1999 to 2008. Dr. Roy also
@@ -90,8 +95,9 @@ export default [
     speakerImage: pranavLadImage,
     speakerName: "Dr. Pranav Lad",
     speakerDesignation: "Engineer @MathWorks",
+    additionalId: "pranavLad",
     speakerDetails: (
-      <p>
+      <p id="pranavLad">
         Dr. Pranav Lad is a Customer Success Engineer at MathWorks, based out of
         Pune. He works closely with academic institutions to help accelerate the
         pace of research and to improve learning outcomes. His technical
@@ -159,6 +165,30 @@ export default [
       "https://dare2compete.com/workshop/a-mindmap-for-competitive-exam-session-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-225129",
   },
   {
+    id: 12,
+    speakerImage: suryanarayanPaneerselvamImage,
+    speakerName: "Mr. Suryanarayan Paneerselvam",
+    speakerDesignation: "Co-Founder, Skill Lync",
+    speakerDetails: (
+      <p>
+        Mr. Suryanarayanan Paneerselvam, the co-founder of Skill Lync, will be
+        interacting with us through this intriguing tech talk and share his
+        experience and knowledge about <b>Entrepreneurship & Technology</b>. Mr.
+        Suryanarayan is amongst the ones who laid the very first stone to build
+        this online learning platform, Skill-Lync, and has made sure education
+        is being delivered right by leveraging technology to equip students with
+        the technical skillset they require to start and succeed in their
+        respective careers paths.
+      </p>
+    ),
+    isLive: false,
+    date: "21th Oct 2021",
+    time: "6 pm IST",
+    animation: "fade-in",
+    joinLink:
+      "https://dare2compete.com/workshop/entrepreneurship-technology-session-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-226164?lb=ujF9daB",
+  },
+  {
     id: 6,
     speakerImage: praveenKumarImage,
     speakerName: "Mr. Praveen Kumar",
@@ -208,10 +238,39 @@ export default [
       "https://dare2compete.com/workshop/future-of-transportation-workshop-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-224276",
   },
   {
+    id: 13,
+    speakerImage: satishRajamaniImage,
+    speakerName: "Satish Rajamani",
+    speakerDesignation: "CEO @Four Clover Technology Solutions",
+    additionalId: "satishRajamani",
+    speakerDetails: (
+      <p>
+        Mr. Sathish Rajamani is a Director at Cognizant with key
+        responsibilities of Enterprise Applications Quality Engineering &
+        Assurance and delivering complex projects and programs. He is a career
+        coach and a Motivational speaker and is actively engaged in transforming
+        the lives of students , engineers and entrepreneurs. He is also a
+        thought leader and a regular speaker at Industry forums and events like
+        Oracle Open World, STAR Conference, QUEST Conference and Oracle User
+        group events. Mr. Rajamani is also the adjunct faculty & Guest lecturer
+        in leading Technology & Business schools in US and India. He will be
+        conducting a seminar on{" "}
+        <b>"Advances in Technology and Future of work" </b>
+        along with an hour of Interactive QnA session.
+      </p>
+    ),
+    isLive: false,
+    date: "23rd Oct 2021",
+    time: "8 pm IST",
+    animation: "zoom-in-up",
+    joinLink:
+      "https://dare2compete.com/p/ai-application-in-future-session-duplicate-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-228925?lb=D8BuQTU",
+  },
+  {
     id: 8,
     speakerImage: ankitTripathiImage,
     speakerName: "Mr. Ankit Tripathi",
-    speakerDesignation: "Founder- Uneako, Open Speaker",
+    speakerDesignation: "Founder- Uneako, Open Speaker ",
     speakerDetails: (
       <p>
         Ankit Tripathi is a Young social entrepreneur, Mechanical Engineer by
@@ -231,6 +290,28 @@ export default [
     animation: "fade-up",
     joinLink:
       "https://dare2compete.com/workshop/countdown-to-a-better-climate-session-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-225540?lb=ujF9daB",
+  },
+  {
+    id: 14,
+    speakerImage: apvImage,
+    speakerName: "Mr. Ajay Ponna Venkatesh",
+    speakerDesignation: "Senior Engineering Manager, Flipkart Camera",
+    speakerDetails: (
+      <p>
+        Ajay is an avid traveler, sports enthusiast and would likely be a chef
+        if not an engineer. His passion for Ar/Vr development led him into
+        co-founding Scapic, which later got acquired by Flipkart in November
+        2020. Dimension (Game Dev and XR Community, IIIT Nagpur) invite Mr. Ajay
+        Poona Venkatesh in TantraFiesta 2021 to conduct a session on "AR/VR
+        landscape in India and Career Opportunities".
+      </p>
+    ),
+    isLive: false,
+    date: "24th Oct 2021",
+    time: "11 am IST",
+    animation: "zoom-in-up",
+    joinLink:
+      "https://dare2compete.com/workshop/arvr-as-a-career-tantrafiesta-2021-indian-institute-of-information-technology-iiit-nagpur-228943?lb=D8BuQTU",
   },
   {
     id: 9,
