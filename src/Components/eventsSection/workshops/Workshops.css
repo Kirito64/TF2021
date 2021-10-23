@@ -29,21 +29,43 @@
   align-items: center;
   margin: 40px 0;
   width: 80%;
+  max-width: 80%;
+  flex-wrap: wrap;
 }
 
 .workshop-cards > div {
-  margin: 0 25px;
+  margin: 0px 25px;
   cursor: context-menu;
   min-width: 40%;
+  margin-bottom: 30px;
 }
 
-.workshop-cards > div > div{
-  text-align: center;
+/* .workshop-cards > div:nth-child(3) > div{
+  text-align: center; 
 }
 
-.workshop-cards .button-deadline{
+.workshop-cards > div:nth-child(3) > div:nth-child(3){
   display: none;
+} */
+
+/* 
+glow animation
+*/
+
+/* .glow{
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
 }
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px greenyellow, 0 0 5px greenyellow, 0 0 3px #e60073, 0 0 3px #e60073, 0 0 3px #e60073, 0 0 3px #e60073, 0 0 3px greenyellow;
+  }
+  to {
+    text-shadow: 0 0 4px greenyellow, 0 0 5px greenyellow, 0 0 4px #7f5cff, 0 0 7px #7f5cff, 0 0 7px #7f5cff, 0 0 8px #7f5cff, 0 0 8px #7f5cff;
+  }
+} */
 
 @media screen and (max-width:1536px) {
   .workshop-cards > div{
@@ -71,7 +93,21 @@
 
 @media screen and (max-width: 600px) {
   .workshop-cards {
-    width: 100%;
+    min-width: 100%;
+  }
+}
+
+@media screen and (max-width:550px){
+  .workshop-cards > div{
+    max-width: 90%;
+    min-width: 90%;
+  }
+   .workshop-cards > div > div:nth-child(2){
+    max-height: 10px;
+  }
+  .workshop-cards > div > div:nth-child(2) p{
+    max-height: 179px;
+    overflow: auto;
   }
 }
 
